@@ -30,3 +30,10 @@ Processing ArticlesController#index (for ::1 at 2009-11-16 21:48:44) [GET]
 Rendering template within layouts/articles
 Rendering articles/index
 Completed in 44ms (View: 40, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:29:54) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 23ms (View: 19, DB: 0) | 200 OK [http://localhost/]
