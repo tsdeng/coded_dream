@@ -23,3 +23,10 @@ Migrating to CreateArticles (20091116134108)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("articles")[0m
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 21:48:44) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 44ms (View: 40, DB: 0) | 200 OK [http://localhost/]
