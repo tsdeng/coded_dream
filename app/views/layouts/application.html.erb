@@ -1,18 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>Coded Dream</title>
-  <%= stylesheet_link_tag 'scaffold' %>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <title>Coded Dream</title>
+    <%= stylesheet_link_tag 'scaffold' %>
+    <%= stylesheet_link_tag '960' %>
 </head>
 <body>
- <h1>Coded Dream</h1>
- <q>a blog of ruby</q>
-<p style="color: green"><%= flash[:notice] %></p>
+<div id="container" class="container_12 clearfix">
+    <h1>Coded Dream</h1>
+    <q>a blog of ruby</q>
 
-<%= yield %>
+    <p style="color: green"><%= flash[:notice] %></p>
 
+    <%= yield %>
+</div>
 </body>
 </html>
