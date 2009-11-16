@@ -1,0 +1,11 @@
+<h2>Login</h2>
+<%form_tag ({:action=>"login"},:class=>"grid_12") do %>
+
+
+<label class="grid_2 alpha">username:</label>
+   <div class="grid_10 omega"> <%= text_field_tag :username,""%></div>
+    <label class="grid_2 alpha">password:</label>
+   <div class="grid_10 omega"> <%= password_field_tag :password,""%></div>
+     <%=submit_tag "LOGIN"%>
+
+<%end%>

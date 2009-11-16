@@ -82,4 +82,9 @@ class ArticlesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def console
+    @articles = Article.all
+  end
+
 end

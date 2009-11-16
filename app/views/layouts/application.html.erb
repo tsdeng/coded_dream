@@ -18,6 +18,11 @@
     <p style="color: green"><%= flash[:notice] %></p>
 
     <%= yield %>
+    <div id="footer"class="grid_12">
+
+        <p>dengtianshuo@gmail.com</p>
+        <p><%=link_to :console,:action=>:console%></p>
+        </div>
 </div>
 </body>
 </html>

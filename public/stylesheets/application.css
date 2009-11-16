@@ -26,3 +26,8 @@ body{
 a{
     color:#ff9933;
 }
+
+#footer {
+    border-top:solid 2px grey;
+    color:grey;
+}
