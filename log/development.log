@@ -37,3 +37,683 @@ Processing ArticlesController#index (for ::1 at 2009-11-16 22:29:54) [GET]
 Rendering template within layouts/application
 Rendering articles/index
 Completed in 23ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:34:17) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:34:18) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:34:19) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:34:19) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:34:19) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:34:20) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:34:20) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:34:21) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:35:03) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 46ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:35:04) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:35:05) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:35:05) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:35:05) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:35:06) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:35:06) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:35:39) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:35:59) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:36:12) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:36:28) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#new (for ::1 at 2009-11-16 22:36:40) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 18ms (View: 14, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:36:44) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:41:36) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:41:37) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for ::1 at 2009-11-16 22:41:39) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for ::1 at 2009-11-16 22:41:54) [POST]
+  Parameters: {"article"=>{"title"=>"This is My first article", "content"=>"jkljkl;nnkl;\r\njhik;jl;jn\r\njkl"}, "commit"=>"Create", "authenticity_token"=>"lj83vGZsH15E7aunovf/JKLJHQmvZ4/2P/xqHIKq2Z0="}
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "updated_at", "content") VALUES('2009-11-16 14:41:54', 'This is My first article', '2009-11-16 14:41:54', 'jkljkl;nnkl;
+jhik;jl;jn
+jkl')[0m
+Redirected to http://localhost:3000/articles/1
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for ::1 at 2009-11-16 22:41:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:41:56) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:43:06) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 55ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:43:07) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:43:31) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:43:33) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for ::1 at 2009-11-16 22:43:36) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for ::1 at 2009-11-16 22:44:06) [POST]
+  Parameters: {"article"=>{"title"=>"第2篇文章", "content"=>"今天試著將兩個手頭上已經沒在密集維護但偶有流量的網站移植到Heroku上來降低維護的成本，過程中相當輕鬆地將專案無痛轉移到Heroku之外，連資料都一起順利轉移過去了，以下是轉移步驟的簡介。\r\n\r\n   1. 將專案納入git版本控管中，指令是git init\r\n   2. 建立一個新的Heroku空間，指令是heroku create或是heroku create YOUR_APP_NAME\r\n   3. 在config/environment.rb加上$KCODE='u'（避免中文編碼問題，我是加在第一行）\r\n   4. 將所有檔案丟到Heroku上：git add . ; git commit -a -m \"deploy to Heroku\" ; git push heroku master\r\n\r\n步驟其實很簡單，官方文件上應該也能找到更詳盡的教學，另外要注意的是，如果您的專案擁有自己的網址，希望能一併指到Heroku，還需要注意下列事項："}, "commit"=>"Create", "authenticity_token"=>"lj83vGZsH15E7aunovf/JKLJHQmvZ4/2P/xqHIKq2Z0="}
+  [4;36;1mArticle Create (0.3ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "updated_at", "content") VALUES('2009-11-16 14:44:06', '第2篇文章', '2009-11-16 14:44:06', '今天試著將兩個手頭上已經沒在密集維護但偶有流量的網站移植到Heroku上來降低維護的成本，過程中相當輕鬆地將專案無痛轉移到Heroku之外，連資料都一起順利轉移過去了，以下是轉移步驟的簡介。
+
+ 1. 將專案納入git版本控管中，指令是git init
+ 2. 建立一個新的Heroku空間，指令是heroku create或是heroku create YOUR_APP_NAME
+ 3. 在config/environment.rb加上$KCODE=''u''（避免中文編碼問題，我是加在第一行）
+ 4. 將所有檔案丟到Heroku上：git add . ; git commit -a -m "deploy to Heroku" ; git push heroku master
+
+步驟其實很簡單，官方文件上應該也能找到更詳盡的教學，另外要注意的是，如果您的專案擁有自己的網址，希望能一併指到Heroku，還需要注意下列事項：')[0m
+Redirected to http://localhost:3000/articles/2
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for ::1 at 2009-11-16 22:44:06) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/articles/2]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:44:12) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:45:11) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:46:45) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:46:46) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:46:47) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:46:48) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:46:48) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 51ms (View: 47, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:46:49) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:47:09) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:48:02) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:48:30) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 53ms (View: 49, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:48:31) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:48:55) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:49:34) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:49:36) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:49:36) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:49:37) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:49:37) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:49:37) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:49:37) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:49:38) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:49:38) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 50ms (View: 46, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:49:39) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:50:05) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:50:06) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:50:07) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 52ms (View: 48, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:50:07) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:50:44) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:50:45) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:50:46) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:50:46) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:50:46) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:08) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:10) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:10) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:10) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:10) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 63ms (View: 56, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:10) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:23) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:25) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:25) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 53ms (View: 49, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:26) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:26) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:26) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:26) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 54ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:26) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:27) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:27) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:27) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:28) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:30) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:30) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:30) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:51:30) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:53:00) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:54:18) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 52ms (View: 48, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:54:20) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:54:21) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:54:21) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:54:22) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:54:23) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-11-16 22:54:23) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]

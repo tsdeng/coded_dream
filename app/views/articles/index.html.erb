@@ -1,22 +1,23 @@
-<h1>Listing articles</h1>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Content</th>
-  </tr>
-
 <% @articles.each do |article| %>
-  <tr>
-    <td><%=h article.title %></td>
-    <td><%=h article.content %></td>
-    <td><%= link_to 'Show', article %></td>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-    <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+    <div class="article grid_12">
+        <div class="grid_2 alpha">
+            title:
+        </div>
+        <div class="grid_10 omega">
+            <%= link_to article.title, edit_article_path(article) %>
+        </div>
+        <div class="grid_2 alpha">
+            content:
+        </div>
+        <div class="grid_10 omega">
+            <%= h article.content %>
+        </div>
+        <div class="grid_12">
+            <%= link_to 'Edit', edit_article_path(article) %>
+            <%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %>
+        </div>
+    </div>
 
-<br />
+<% end %>
 
 <%= link_to 'New article', new_article_path %>
