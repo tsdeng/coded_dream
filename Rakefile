@@ -17,4 +17,5 @@ task :deploy do
   sh "git commit -m '#{message}' "
   sh "git push heroku master"
   sh "heroku rake db:migrate"
+  sh "heroku open"
 end
