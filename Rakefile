@@ -11,7 +11,10 @@ require 'tasks/rails'
 
 task :deploy do
   sh "git add ."
-  sh "git commit -m 'commit using rake' "
+  puts "-------------input commit message------------"
+  message=STDIN.gets.chomp
+  
+  sh "git commit -m '#{message}' "
   sh "git push heroku master"
   sh "heroku rake db:migrate"
 end
