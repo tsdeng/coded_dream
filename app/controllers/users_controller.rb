@@ -5,7 +5,7 @@ class UsersController < ApplicationController
       password=params[:password];
       if username=="tsdeng" then
         session[:status]="login"
-        redirect_to :controller=>"articles",:action=>"index"
+        redirect_to :controller=>"articles",:action=>"console"
       end
     end
   end
