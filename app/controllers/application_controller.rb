@@ -19,4 +19,12 @@ class ApplicationController < ActionController::Base
   def remember_url
     session[:url]=request.url
   end
+  
+  def redirect_to_remembered_url
+    if session[:url] 
+      redirect_to session[:url]
+    else
+      redirect_to :back
+    end
+  end
 end

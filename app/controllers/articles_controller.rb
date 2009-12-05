@@ -49,7 +49,7 @@ class ArticlesController < ApplicationController
         flash[:notice] = 'Article was successfully created.'
         format.html { 
           
-          redirect_to session[:url] 
+          redirect_to_remembered_url
          
           }
         format.xml  { render :xml => @article, :status => :created, :location => @article }
