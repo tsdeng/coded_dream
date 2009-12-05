@@ -33,7 +33,7 @@ class UsersController < ApplicationController
 
   def logout
     session[:user_id]=nil
-    redirect_to session[:url]
+    redirect_to :controller=>:articles
   end
 
   private
