@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.xml
-  before_filter :check_login
+  before_filter :check_login,:except=>[:index]
   
   def index
     @articles = Article.all

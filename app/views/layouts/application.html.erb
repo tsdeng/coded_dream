@@ -39,6 +39,9 @@
 				<li><%=link_to_when_login :logout,"",:controller=>"users",:action=>"logout"%></li>
 				<li><%=link_to_when_login :console,"",:controller=>"console"%></li>
 			</ul>
+			<%if session[:user_id]%>
+			<p>Welcome <%=User.find(session[:user_id]).username%></p>
+			<%end%>
 
 		</div>
 

@@ -1,7 +1,5 @@
 class User < ActiveRecord::Base
   def self.login(username,password)
-    if username=="tsdeng" 
-      return User.new(:id=>100) 
-    end
+    return self.find_by_username_and_password(username,password)
   end 
 end
