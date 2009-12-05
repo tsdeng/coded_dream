@@ -68,7 +68,7 @@ class ArticlesController < ApplicationController
     respond_to do |format|
       if @article.update_attributes(params[:article])
         flash[:notice] = 'Article was successfully updated.'
-        format.html { redirect_to :back}
+        format.html { redirect_to_remembered_url}
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -84,7 +84,7 @@ class ArticlesController < ApplicationController
     @article.destroy
 
     respond_to do |format|
-      format.html { redirect_to :back}
+      format.html { redirect_to_remembered_url}
       format.xml  { head :ok }
     end
   end
