@@ -11,6 +11,18 @@
 	<%= javascript_include_tag 'jquery'%>
 	<%= javascript_include_tag 'jquery-ui/js/jquery-ui-1.7.2.custom.min.js'%>
 
+<!--for mark it up texteditor-->
+<!-- markItUp! -->
+<%= javascript_include_tag '/markitup/jquery.markitup.pack.js'%>
+<!-- markItUp! toolbar settings -->
+<%= javascript_include_tag "/markitup/sets/default/set.js"%>
+<!-- markItUp! skin -->
+<%= stylesheet_link_tag "/markitup/skins/markitup/style.css" %>
+<!--  markItUp! toolbar skin -->
+<%= stylesheet_link_tag "/markitup/sets/default/style.css" %>
+
+<!--END for mark it up texteditor-->
+
 	<%= stylesheet_link_tag 'application' %>
 
 </head>

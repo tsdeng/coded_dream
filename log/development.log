@@ -6363,3 +6363,173 @@ Processing ConsoleController#index (for ::1 at 2009-12-05 15:00:36) [GET]
 Rendering template within layouts/application
 Rendering console/index
 Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 15:01:28) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 15:15:50) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 22ms (View: 17, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-05 15:15:53) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-05 15:17:12) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-05 15:17:33) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#templates to html (for ::1 at 2009-12-05 15:17:47) [GET]
+  Parameters: {"id"=>"preview"}
+
+ActionController::UnknownAction (No action responded to templates. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-05 15:22:36) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#templates to html (for ::1 at 2009-12-05 15:23:25) [GET]
+  Parameters: {"id"=>"preview"}
+
+ActionController::UnknownAction (No action responded to templates. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-05 15:23:43) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#templates to html (for ::1 at 2009-12-05 15:27:06) [GET]
+  Parameters: {"id"=>"preview"}
+
+ActionController::UnknownAction (No action responded to templates. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 15:31:48) [GET]
+
+ActionController::RoutingError (No route matches "/markitup" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 15:32:28) [GET]
+
+ActionController::RoutingError (No route matches "/markitup/templates/~/templates/preview.css" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 15:34:02) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 15:34:04) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-05 15:34:07) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#templates to css (for ::1 at 2009-12-05 15:34:19) [GET]
+  Parameters: {"id"=>"preview"}
+
+ActionController::UnknownAction (No action responded to templates. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
