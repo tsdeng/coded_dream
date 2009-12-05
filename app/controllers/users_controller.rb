@@ -8,8 +8,8 @@ class UsersController < ApplicationController
         return
       end
         session[:user_id]=current_user.id
-        redirect_to :controller=>"console" unless session[:url]
-        redirect_to session[:url]
+        redirect_to :controller=>"console"
+        
     
     end
   end
