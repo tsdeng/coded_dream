@@ -1,33 +1,15 @@
-#container {
-    
-    border-left:3px solid #ccccff;
-    border-right:3px solid #ccccff;
-    border-bottom:1px solid white;
-    padding :50px;
-    background-color:#2b2b2b;
+/*define layout*/
+ul#navigation{
+	border:1px dotted black;
+	list-style-type: square;
+	
 }
 
-.article{
-    color:grey;
-    border:1px solid slategray;
-    margin: 10px;
-    padding:10px;
-
-}
- body{
-     color:#ccccff;
- }
-body{
-    margin:0px;
-    padding:0px;
-    background-color:black;
+ul#navigation li{
+   display:block;
+   float:left;
+   width:100px;
 }
 
-a{
-    color:#ff9933;
-}
-
-#footer {
-    border-top:solid 2px grey;
-    color:grey;
-}
+/*define color and font*/
+/*define layout*/

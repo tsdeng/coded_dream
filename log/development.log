@@ -4367,3 +4367,1999 @@ Completed in 47ms (View: 43, DB: 0) | 200 OK [http://localhost/articles]
 [0m
   [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
   [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091116134108')[0m
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 11:35:20) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 66ms (View: 61, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 11:38:19) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 11:40:02) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 11:40:03) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 11:40:16) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 11:42:02) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 11:43:37) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 11:43:54) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 49ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 11:44:29) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 11:44:32) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 11:44:58) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 11:48:00) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 11:48:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/960.css" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 11:52:15) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 11:52:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/960.css" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 11:52:15) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 11:52:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/960.css" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 11:52:16) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 11:52:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/960.css" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 11:52:31) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 52ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 11:52:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/960/.css" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 11:54:05) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 12:08:53) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 12:14:22) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 12:14:25) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 51ms (View: 49, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 12:14:33) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>"tsdeng"}
+Redirected to http://localhost:3000/console
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 12:14:33) [GET]
+
+ActionController::RoutingError (No route matches "/console" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 12:14:43) [GET]
+
+ActionController::RoutingError (No route matches "/console/index.html" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 12:15:17) [GET]
+
+ActionController::RoutingError (No route matches "/console/index.html" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 12:15:20) [GET]
+
+ActionController::RoutingError (No route matches "/console/index.html" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 12:15:20) [GET]
+
+ActionController::RoutingError (No route matches "/console/index.html" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 12:15:20) [GET]
+
+ActionController::RoutingError (No route matches "/console/index.html" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 12:15:21) [GET]
+
+ActionController::RoutingError (No route matches "/console/index.html" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 12:15:21) [GET]
+
+ActionController::RoutingError (No route matches "/console/index.html" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 12:15:22) [GET]
+
+ActionController::RoutingError (No route matches "/console/index.html" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 12:15:22) [GET]
+
+ActionController::RoutingError (No route matches "/console/index.html" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 12:15:22) [GET]
+
+ActionController::RoutingError (No route matches "/console/index.html" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 12:15:33) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>"tsdeng"}
+Redirected to http://localhost:3000/console
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 12:15:33) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 115ms (View: 111, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-05 12:15:49) [GET]
+
+ActionController::RoutingError (No route matches "/console/index.html" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 12:15:55) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/console/index]
+
+
+Processing ArticlesController#edit (for ::1 at 2009-12-05 12:17:02) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/2/edit]
+
+
+Processing ArticlesController#edit (for ::1 at 2009-12-05 12:17:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/articles/1/edit]
+
+
+Processing ArticlesController#destroy (for ::1 at 2009-12-05 12:17:57) [DELETE]
+  Parameters: {"authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+  [4;35;1mArticle Destroy (4.1ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 1[0m
+Redirected to http://localhost:3000/console/index
+Completed in 71ms (DB: 4) | 302 Found [http://localhost/articles/1]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 12:17:57) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/console/index]
+
+
+Processing ArticlesController#destroy (for ::1 at 2009-12-05 12:18:09) [DELETE]
+  Parameters: {"authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "id"=>"2"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+  [4;36;1mArticle Destroy (0.7ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/console/index
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/articles/2]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 12:18:09) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/console/index]
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-05 12:18:16) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-05 12:32:21) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing UsersController#register (for ::1 at 2009-12-05 12:32:23) [GET]
+Rendering template within layouts/application
+Rendering users/register
+
+ActionView::TemplateError (Could not find table 'users') on line #3 of app/views/users/register.html.erb:
+1: <h2>register</h2>
+2: 
+3: <%form_for User.new ,{:url=>{:action=>"register"}} do |f|%>
+4:   <label>username:</label>
+5:   <%=f.text_field :username%>
+6:   <label>password</label>
+
+    app/views/users/register.html.erb:3:in `new'
+    app/views/users/register.html.erb:3
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20091116134108)
+Migrating to CreateUsers (20091205041946)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "age" integer, "gender" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091205041946')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing UsersController#register (for ::1 at 2009-12-05 12:32:47) [GET]
+Rendering template within layouts/application
+Rendering users/register
+
+ActionView::TemplateError (undefined method `password' for #<User:0x11b6970>) on line #7 of app/views/users/register.html.erb:
+4:   <label>username:</label>
+5:   <%=f.text_field :username%>
+6:   <label>password</label>
+7:   <%=f.password_field :password%>
+8: 
+9:   <%= f.submit :register%>
+10: <%end%>
+
+    app/views/users/register.html.erb:7
+    app/views/users/register.html.erb:3
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#register (for ::1 at 2009-12-05 12:32:50) [GET]
+Rendering template within layouts/application
+Rendering users/register
+
+ActionView::TemplateError (undefined method `password' for #<User:0x174740c>) on line #7 of app/views/users/register.html.erb:
+4:   <label>username:</label>
+5:   <%=f.text_field :username%>
+6:   <label>password</label>
+7:   <%=f.password_field :password%>
+8: 
+9:   <%= f.submit :register%>
+10: <%end%>
+
+    app/views/users/register.html.erb:7
+    app/views/users/register.html.erb:3
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20091116134108)
+Migrating to CreateUsers (20091205041946)
+Migrating to AddPasswordToUsers (20091205043347)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mALTER TABLE "users" ADD "password" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091205043347')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing UsersController#register (for ::1 at 2009-12-05 12:34:07) [GET]
+Rendering template within layouts/application
+Rendering users/register
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/users/register]
+
+
+Processing UsersController#register (for ::1 at 2009-12-05 12:35:39) [POST]
+  Parameters: {"commit"=>"register", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "user"=>{"username"=>"admin", "password"=>"admin"}}
+Rendering template within layouts/application
+Rendering users/register
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/users/register]
+
+
+Processing UsersController#register (for ::1 at 2009-12-05 12:35:40) [POST]
+  Parameters: {"commit"=>"register", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "user"=>{"username"=>"admin", "password"=>"admin"}}
+Rendering template within layouts/application
+Rendering users/register
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/users/register]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 12:35:48) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 12:35:49) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"admin", "password"=>"admin"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `login' for #<Class:0x199c054>):
+  app/controllers/users_controller.rb:6:in `login'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (25.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 12:37:08) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+
+SyntaxError (/Users/twer/Develop/coded_dream/app/models/user.rb:3: syntax error, unexpected kRETURN, expecting kTHEN or ':' or '\n' or ';'
+    if username=="tsdeng" return User.new(:id=>100)
+                                ^):
+  app/controllers/users_controller.rb:6:in `login'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (73.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 12:37:21) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+
+SyntaxError (/Users/twer/Develop/coded_dream/app/models/user.rb:5: syntax error, unexpected $end, expecting kEND):
+  app/controllers/users_controller.rb:6:in `login'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 12:37:44) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `login' for #<Class:0x1260bb4>):
+  app/controllers/users_controller.rb:6:in `login'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 12:38:36) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `login' for #<Class:0x19a5c1c>):
+  app/controllers/users_controller.rb:6:in `login'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 12:38:56) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `login' for #<Class:0x12eec5c>):
+  app/controllers/users_controller.rb:6:in `login'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (77.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 12:39:41) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+WARNING: Can't mass-assign these protected attributes: id
+
+NameError (undefined local variable or method `user_id' for #<UsersController:0x19de92c>):
+  app/controllers/users_controller.rb:8:in `login'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 12:40:12) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+WARNING: Can't mass-assign these protected attributes: id
+Redirected to http://localhost:3000/console
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 12:40:12) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 12:48:17) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+WARNING: Can't mass-assign these protected attributes: id
+Redirected to http://localhost:3000/console
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 12:48:18) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 12:55:51) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+WARNING: Can't mass-assign these protected attributes: id
+Redirected to http://localhost:3000/console
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 12:55:51) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:04:15) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 13:04:21) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 13:04:33) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 46ms (View: 42, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 13:06:36) [GET]
+
+NameError (undefined local variable or method `action' for #<ArticlesController:0x19c4fcc>):
+  app/controllers/application_controller.rb:12:in `check_login'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 13:06:40) [GET]
+
+NameError (undefined local variable or method `action' for #<ArticlesController:0x1724c90>):
+  app/controllers/application_controller.rb:12:in `check_login'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (26.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 13:06:50) [GET]
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:06:50) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 13:06:51) [GET]
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:06:51) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:06:58) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"admin", "password"=>"admin"}
+Rendering template within layouts/application
+Rendering users/login
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:06:59) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"admin", "password"=>"admin"}
+Rendering template within layouts/application
+Rendering users/login
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:07:03) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tedeng", "password"=>""}
+Rendering template within layouts/application
+Rendering users/login
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:07:06) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+WARNING: Can't mass-assign these protected attributes: id
+Redirected to http://localhost:3000/console
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:07:06) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:12:13) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:12:14) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:12:15) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:12:17) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:12:18) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:12:21) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:12:27) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+WARNING: Can't mass-assign these protected attributes: id
+Redirected to http://localhost:3000/console
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:12:27) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:13:24) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 48ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:13:25) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:13:26) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:13:26) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:13:26) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:13:27) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:13:27) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:14:09) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:14:09) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:14:10) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:14:10) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:14:10) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:14:11) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:14:11) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:14:12) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:14:30) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:14:31) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:14:31) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:14:32) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:14:34) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:14:35) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:15:30) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:15:48) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:15:49) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:15:49) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 48ms (View: 45, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 13:15:57) [GET]
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:15:57) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:16:40) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:16:42) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"admin", "password"=>"admin"}
+Rendering template within layouts/application
+Rendering users/login
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:18:04) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"admin", "password"=>"admin"}
+Rendering template within layouts/application
+Rendering users/login
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:18:11) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+WARNING: Can't mass-assign these protected attributes: id
+Redirected to http://localhost:3000/console
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:18:11) [GET]
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/console]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:18:11) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:18:16) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+WARNING: Can't mass-assign these protected attributes: id
+Redirected to http://localhost:3000/console
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:18:16) [GET]
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/console]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:18:16) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:18:18) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"admin", "password"=>"admin"}
+Rendering template within layouts/application
+Rendering users/login
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:18:19) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"admin", "password"=>"admin"}
+Rendering template within layouts/application
+Rendering users/login
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:20:01) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"admin", "password"=>"admin"}
+Rendering template within layouts/application
+Rendering users/login
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:20:30) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>"tsdeng"}
+WARNING: Can't mass-assign these protected attributes: id
+Redirected to http://localhost:3000/console
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:20:30) [GET]
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/console]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:20:30) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing ArticlesController#show (for ::1 at 2009-12-05 13:22:49) [GET]
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/articles/1]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:22:49) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 46ms (View: 45, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 13:23:57) [GET]
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/articles/]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:23:57) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:25:43) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"admin", "password"=>"admin"}
+Rendering template within layouts/application
+Rendering users/login
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:25:50) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+WARNING: Can't mass-assign these protected attributes: id
+Redirected to http://localhost:3000/console
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:25:50) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 13:28:14) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 13:30:23) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 49ms (View: 45, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 13:30:25) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 13:32:34) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:32:36) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-05 13:32:38) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for ::1 at 2009-12-05 13:32:41) [POST]
+  Parameters: {"article"=>{"title"=>"sss", "content"=>"sss"}, "commit"=>"Create", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU="}
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "updated_at", "content") VALUES('2009-12-05 05:32:42', 'sss', '2009-12-05 05:32:42', 'sss')[0m
+Redirected to http://localhost:3000/articles/3
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for ::1 at 2009-12-05 13:32:42) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/3]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 13:32:46) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:32:48) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 13:33:42) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:33:44) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:41:01) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:41:32) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 13:41:34) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:41:36) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#edit (for ::1 at 2009-12-05 13:42:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+Completed in 49ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/3/edit]
+
+
+Processing ArticlesController#update (for ::1 at 2009-12-05 13:42:08) [PUT]
+  Parameters: {"article"=>{"title"=>"sss", "content"=>"sss"}, "commit"=>"Update", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Redirected to http://localhost:3000/console
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/articles/3]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:42:08) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 19ms (View: 15, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing UsersController#logout (for ::1 at 2009-12-05 13:43:37) [GET]
+
+ActionController::UnknownAction (No action responded to logout. Actions: login and register):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#logout (for ::1 at 2009-12-05 13:44:59) [GET]
+
+ActionView::MissingTemplate (Missing template users/logout.erb in view path app/views):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 13:45:04) [GET]
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:45:04) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:46:39) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:46:41) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:46:51) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+WARNING: Can't mass-assign these protected attributes: id
+Redirected to http://localhost:3000/console
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:46:51) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing UsersController#logout (for ::1 at 2009-12-05 13:46:59) [GET]
+
+NoMethodError (undefined method `session_url_url' for #<UsersController:0x57c984>):
+  app/controllers/users_controller.rb:19:in `logout'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#logout (for ::1 at 2009-12-05 13:47:28) [GET]
+Redirected to http://localhost:3000/console
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/users/logout]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:47:28) [GET]
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/console]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:47:28) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:47:33) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+WARNING: Can't mass-assign these protected attributes: id
+Redirected to http://localhost:3000/console
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:47:33) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#edit (for ::1 at 2009-12-05 13:47:35) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/3/edit]
+
+
+Processing UsersController#logout (for ::1 at 2009-12-05 13:47:37) [GET]
+Redirected to http://localhost:3000/console
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/users/logout]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:47:37) [GET]
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/console]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:47:37) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:47:46) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+WARNING: Can't mass-assign these protected attributes: id
+Redirected to http://localhost:3000/console
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:47:46) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 54ms (View: 49, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:49:25) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:49:42) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing UsersController#logout (for ::1 at 2009-12-05 13:49:58) [GET]
+Redirected to http://localhost:3000/console
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/users/logout]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 13:49:58) [GET]
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/console]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:49:58) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 13:59:00) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 14:00:59) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 14:01:10) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 14:01:20) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 14:01:52) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 14:02:55) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+WARNING: Can't mass-assign these protected attributes: id
+Redirected to http://localhost:3000/console
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 14:02:55) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 14:03:01) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing UsersController#logout (for ::1 at 2009-12-05 14:03:59) [GET]
+Redirected to http://localhost:3000/console
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/users/logout]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 14:03:59) [GET]
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/console]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 14:03:59) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 14:04:04) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"admin", "password"=>"admin"}
+Rendering template within layouts/application
+Rendering users/login
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 14:04:11) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "username"=>"tsdeng", "password"=>""}
+WARNING: Can't mass-assign these protected attributes: id
+Redirected to http://localhost:3000/console
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 14:04:11) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-05 14:33:13) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 14:33:21) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 14:33:27) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 14:33:30) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing UsersController#test (for ::1 at 2009-12-05 14:46:44) [GET]
+Rendering template within layouts/application
+Rendering users/test
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://localhost/users/test]
+
+
+Processing UsersController#test (for ::1 at 2009-12-05 14:46:54) [GET]
+Rendering template within layouts/application
+Rendering users/test
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/test]
+
+
+Processing UsersController#test (for ::1 at 2009-12-05 14:46:55) [GET]
+Rendering template within layouts/application
+Rendering users/test
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/test]
+
+
+Processing UsersController#test (for ::1 at 2009-12-05 14:47:42) [GET]
+Rendering template within layouts/application
+Rendering users/test
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/users/test]
+
+
+Processing UsersController#test (for ::1 at 2009-12-05 14:49:56) [GET]
+Rendering template within layouts/application
+Rendering users/test
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/users/test]
+
+
+Processing UsersController#test (for ::1 at 2009-12-05 14:50:06) [GET]
+Rendering template within layouts/application
+Rendering users/test
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/users/test]
+
+
+Processing UsersController#test (for ::1 at 2009-12-05 14:50:07) [GET]
+Rendering template within layouts/application
+Rendering users/test
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/test]
+
+
+Processing UsersController#test (for ::1 at 2009-12-05 14:53:37) [GET]
+Rendering template within layouts/application
+Rendering users/test
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/users/test]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 14:56:28) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 14:56:38) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-05 14:56:40) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 54ms (View: 49, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for ::1 at 2009-12-05 14:56:44) [POST]
+  Parameters: {"article"=>{"title"=>"asdf", "content"=>"asdf"}, "commit"=>"Create", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU="}
+  [4;35;1mArticle Create (0.6ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "updated_at", "content") VALUES('2009-12-05 06:56:44', 'asdf', '2009-12-05 06:56:44', 'asdf')[0m
+Redirected to http://localhost:3000/console
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 14:56:44) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 14:56:47) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 14:57:18) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 14:58:13) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-05 14:58:15) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for ::1 at 2009-12-05 14:58:41) [POST]
+  Parameters: {"article"=>{"title"=>"<h1>asdfasdf</h1>", "content"=>"<h1>h1here</h1>"}, "commit"=>"Create", "authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU="}
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "updated_at", "content") VALUES('2009-12-05 06:58:41', '<h1>asdfasdf</h1>', '2009-12-05 06:58:41', '<h1>h1here</h1>')[0m
+Redirected to http://localhost:3000/console
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 14:58:41) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 24ms (View: 20, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 14:58:45) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 15:00:17) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 15:00:22) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 20ms (View: 16, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#destroy (for ::1 at 2009-12-05 15:00:31) [DELETE]
+  Parameters: {"authenticity_token"=>"8Zmqzs9fbZjTglRbuPmSSDNY7nDouPYGm6AnfHZ6NSU=", "id"=>"5"}
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;36;1mArticle Destroy (0.6ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 5[0m
+Redirected to http://localhost:3000/console
+Completed in 63ms (DB: 1) | 302 Found [http://localhost/articles/5]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 15:00:31) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 15:00:36) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/console]

@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.xml
+  before_filter :check_login
+  
   def index
     @articles = Article.all
 
@@ -45,7 +47,11 @@ class ArticlesController < ApplicationController
     respond_to do |format|
       if @article.save
         flash[:notice] = 'Article was successfully created.'
-        format.html { redirect_to @article}
+        format.html { 
+          
+          redirect_to @article unless session[:url]
+          redirect_to session[:url]
+          }
         format.xml  { render :xml => @article, :status => :created, :location => @article }
       else
         format.html { render :action => "new" }
@@ -62,7 +68,8 @@ class ArticlesController < ApplicationController
     respond_to do |format|
       if @article.update_attributes(params[:article])
         flash[:notice] = 'Article was successfully updated.'
-        format.html { redirect_to :back }
+        format.html { redirect_to :back unless session[:url]
+          redirect_to session[:url]}
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -78,13 +85,11 @@ class ArticlesController < ApplicationController
     @article.destroy
 
     respond_to do |format|
-      format.html { redirect_to :back }
+      format.html { redirect_to :back unless session[:url]
+        redirect_to session[:url] }
       format.xml  { head :ok }
     end
   end
 
-  def console
-    @articles = Article.all
-  end
-
+  
 end

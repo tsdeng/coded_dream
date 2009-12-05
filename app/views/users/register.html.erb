@@ -1,0 +1,10 @@
+<h2>register</h2>
+
+<%form_for User.new ,{:url=>{:action=>"register"}} do |f|%>
+  <label>username:</label>
+  <%=f.text_field :username%>
+  <label>password</label>
+  <%=f.password_field :password%>
+
+  <%= f.submit :register%>
+<%end%>

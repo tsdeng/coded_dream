@@ -1,21 +1,18 @@
-<% @articles.each do |article| %>
-    <div class="article grid_12">
-        <div class="grid_2 alpha">
-            title:
-        </div>
-        <div class="grid_10 omega">
-            <%= article.title %>
-        </div>
-        <div class="grid_2 alpha">
-            content:
-        </div>
-        <div class="grid_10 omega">
-            <%= h article.content %>
-        </div>
-        <div class="grid_12">
+<script type="text/javascript">
+$(function() {
+	$("#article_list").accordion();
+});
+</script>
 
-        </div>
-    </div>
 
-<% end %>
+<div id="article_list">
+	<% @articles.each do |article| %>
+	<h3><a href="#"><%= article.title %></a></h3>
+	<div>
+		<p>
+			<%=article.content %>
+		</p>
+	</div>
+	<% end %>
+</div>
 
