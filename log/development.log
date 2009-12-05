@@ -6533,3 +6533,10 @@ ActionController::UnknownAction (No action responded to templates. Actions: crea
   /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-05 15:37:35) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/articles]
