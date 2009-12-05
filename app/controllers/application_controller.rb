@@ -17,6 +17,6 @@ class ApplicationController < ActionController::Base
   end
   
   def remember_url
-    session[:url]=request.url
+    # session[:url]=request.url
   end
 end

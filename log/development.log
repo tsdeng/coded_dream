@@ -6540,3 +6540,32 @@ Processing ArticlesController#index (for ::1 at 2009-12-05 15:37:35) [GET]
 Rendering template within layouts/application
 Rendering articles/index
 Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing UsersController#logout (for ::1 at 2009-12-05 15:39:01) [GET]
+Redirected to http://localhost:3000/console
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/users/logout]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 15:39:01) [GET]
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/console]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 15:39:01) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-05 15:39:09) [GET]
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/console]
+
+
+Processing UsersController#login (for ::1 at 2009-12-05 15:39:09) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/users/login]
