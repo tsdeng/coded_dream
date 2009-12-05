@@ -1,0 +1,54 @@
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" [0m
+
+
+Processing ArticlesController#create (for 0.0.0.0 at 2009-12-05 11:20:12) [POST]
+  Parameters: {"article"=>{}}
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("updated_at", "title", "content", "created_at") VALUES('2009-12-05 03:20:12', NULL, NULL, '2009-12-05 03:20:12')[0m
+Redirected to http://test.host/articles/2053932786
+Completed in 6ms (DB: 2) | 302 Found [http://test.host/articles?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2053932785) [0m
+
+
+Processing ArticlesController#destroy (for 0.0.0.0 at 2009-12-05 11:20:12) [DELETE]
+  Parameters: {"id"=>"2053932785"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2053932785) [0m
+  [4;36;1mArticle Destroy (0.3ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 2053932785[0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2053932785) [0m
+
+
+Processing ArticlesController#edit (for 0.0.0.0 at 2009-12-05 11:20:12) [GET]
+  Parameters: {"id"=>"2053932785"}
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2053932785) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+Completed in 21ms (View: 20, DB: 2) | 200 OK [http://test.host/articles/2053932785/edit]
+
+
+Processing ArticlesController#index (for 0.0.0.0 at 2009-12-05 11:20:12) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/articles]
+
+
+Processing ArticlesController#new (for 0.0.0.0 at 2009-12-05 11:20:12) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/articles/new]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2053932785) [0m
+
+
+Processing ArticlesController#show (for 0.0.0.0 at 2009-12-05 11:20:12) [GET]
+  Parameters: {"id"=>"2053932785"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2053932785) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/articles/2053932785]
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2053932785) [0m
+
+
+Processing ArticlesController#update (for 0.0.0.0 at 2009-12-05 11:20:12) [PUT]
+  Parameters: {"article"=>{}, "id"=>"2053932785"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2053932785) [0m
