@@ -9125,3 +9125,11 @@ Rendering template within layouts/application
 Rendering console/index
   [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
 Completed in 38ms (View: 34, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 20:33:21) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 73ms (View: 68, DB: 1) | 200 OK [http://localhost/console]
