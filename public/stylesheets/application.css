@@ -1,4 +1,8 @@
 /*define layout*/
+*{
+	margin:0;
+	padding:0;
+}
 ul#navigation{
 	border:1px dotted black;
 	list-style-type: square;
@@ -12,4 +16,7 @@ ul#navigation li{
 }
 
 /*define color and font*/
+	body{
+		background:  url(/images/bg_shadow.png) repeat-y center
+	}
 /*define layout*/
