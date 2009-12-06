@@ -6,8 +6,9 @@
 }
 ul#navigation{
 margin-top:20px;
-	list-style-type: square;
-	
+width:auto;
+float:left;
+
 }
 
 ul#navigation li{
@@ -22,6 +23,11 @@ ul#navigation li{
 }
 body,html,#container{
 	height:100%;
+}
+
+#status{
+	float:right;
+	color:black;
 }
 /*define color and font*/
 #container{
