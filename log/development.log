@@ -8974,3 +8974,125 @@ Rendering template within layouts/application
 Rendering articles/index
   [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
 Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing UsersController#logout (for ::1 at 2009-12-06 20:15:29) [GET]
+Redirected to http://localhost:3000/articles
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/users/logout]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 20:15:29) [GET]
+  [4;36;1mArticle Load (0.8ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 93ms (View: 85, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing UsersController#logout (for ::1 at 2009-12-06 20:15:46) [GET]
+Redirected to http://localhost:3000/articles
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/users/logout]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 20:15:46) [GET]
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing UsersController#logout (for ::1 at 2009-12-06 20:16:33) [GET]
+Redirected to http://localhost:3000/articles
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/users/logout]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 20:16:33) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 86ms (View: 81, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show to xml (for 127.0.0.1 at 2009-12-06 20:16:34) [GET]
+  Parameters: {"id"=>"index"}
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 76ms (DB: 0) | 302 Found [http://localhost/articles/index.xml]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-12-06 20:16:34) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 37ms (View: 36, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing ArticlesController#show to xml (for 127.0.0.1 at 2009-12-06 20:16:34) [GET]
+  Parameters: {"id"=>"index"}
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/articles/index.xml]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-12-06 20:16:34) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 30ms (View: 27, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#logout (for ::1 at 2009-12-06 20:16:52) [GET]
+Redirected to http://localhost:3000/articles
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/users/logout]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 20:16:52) [GET]
+  [4;35;1mArticle Load (5.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 18ms (View: 8, DB: 5) | 200 OK [http://localhost/articles]
+
+
+Processing UsersController#logout (for ::1 at 2009-12-06 20:19:37) [GET]
+Redirected to http://localhost:3000/articles
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/users/logout]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 20:19:37) [GET]
+  [4;36;1mArticle Load (1.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 39ms (View: 33, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing UsersController#logout (for ::1 at 2009-12-06 20:20:55) [GET]
+Redirected to http://localhost:3000/articles
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/users/logout]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 20:20:55) [GET]
+  [4;35;1mArticle Load (1.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 15ms (View: 9, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing UsersController#logout (for ::1 at 2009-12-06 20:21:00) [GET]
+Redirected to http://localhost:3000/articles
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/users/logout]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 20:21:00) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing UsersController#logout (for ::1 at 2009-12-06 20:21:11) [GET]
+Redirected to http://localhost:3000/articles
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/users/logout]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 20:21:11) [GET]
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/articles]
