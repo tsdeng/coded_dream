@@ -4,7 +4,7 @@
 	padding:0;
 }
 ul#navigation{
-	border:1px dotted black;
+margin-top:20px;
 	list-style-type: square;
 	
 }
@@ -15,8 +15,35 @@ ul#navigation li{
    width:100px;
 }
 
+#heading{
+	height:158px;
+	
+}
+body,html,#container{
+	height:100%;
+}
 /*define color and font*/
+#container{
+	background-color: darkgrey;
+}
 	body{
+		
 		background:  url(/images/bg_shadow.png) repeat-y center
+	}
+    #heading>*{
+	margin:10px;
+    }
+	#heading{
+		background: black url('/images/heading_light.png') repeat-y center
+		
+	}
+	#heading h1{
+		margin-top:30px;
+		color: grey;
+	}
+	#heading a{
+		font-weight: bold;
+		text-decoration: none;
+		color:white;
 	}
 /*define layout*/
