@@ -33,7 +33,7 @@ body,html{
 	color:black;
 }
 div.article{
-	border:1px solid white;
+    border-bottom: 5px solid #999;
 	overflow:none;
 	clear:both;
 	margin-bottom:10px;
@@ -47,7 +47,7 @@ div.article .field{
 }
 div.article a{
 	font-weight: bolder;
-    color:#f8210f;	
+    color:green;	
 }
 
 body{
