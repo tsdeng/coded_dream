@@ -7664,3 +7664,59 @@ Rendering template within layouts/application
 Rendering console/index
   [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
 Completed in 20ms (View: 15, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 16:03:21) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 16:03:57) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 16:04:11) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 16:04:21) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 16:04:30) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 16:04:40) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 16:04:50) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 27ms (View: 15, DB: 1) | 200 OK [http://localhost/console]

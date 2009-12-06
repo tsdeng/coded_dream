@@ -41,8 +41,8 @@ body{
 	padding:10px;
 }
 #heading{
-	background: #333333 url('/images/heading_light.png') repeat-y center
-
+	background: #333333 url('/images/heading_light.png') repeat-y center;
+    border:10px solid white;
 }
 #heading h1{
     
