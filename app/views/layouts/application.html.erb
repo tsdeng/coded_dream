@@ -15,11 +15,11 @@
 <!-- markItUp! -->
 <%= javascript_include_tag '/markitup/jquery.markitup.pack.js'%>
 <!-- markItUp! toolbar settings -->
-<%= javascript_include_tag "/markitup/sets/default/set.js"%>
+<%= javascript_include_tag "/markitup/sets/html/set.js"%>
 <!-- markItUp! skin -->
 <%= stylesheet_link_tag "/markitup/skins/markitup/style.css" %>
 <!--  markItUp! toolbar skin -->
-<%= stylesheet_link_tag "/markitup/sets/default/style.css" %>
+<%= stylesheet_link_tag "/markitup/sets/html/style.css" %>
 
 <!--END for mark it up texteditor-->
 
@@ -57,12 +57,14 @@
 			<p>dengtianshuo@gmail.com</p>
 			<p></p>
 		</div>
+		<%if ENV["RAILS_ENV"]=="development"%>
 		<div id="debug" class="grid_12 clearfix" style="border:1px solid black">
 			<div><%=debug(session)%></div>
 			<div><%=request.url%></div>
 			<div><%=session[:url]%> </div>
 
 		</div>
+		<%end%>
 	</div>
 </body>
 </html>

@@ -30,8 +30,23 @@ body,html{
 	float:right;
 	color:black;
 }
+div.article{
+	border:1px solid white;
+	overflow:none;
+	clear:both;
+	margin-bottom:10px;
+}
 
 /*define color and font*/
+div.article .field{
+
+	color:black;
+	font-weight: bolder;
+}
+div.article a{
+	font-weight: bolder;
+    color:#f8210f;	
+}
 
 body{
     background-color: #d7d7d7;
@@ -39,7 +54,12 @@ body{
 }
 #container{
 	min-height:100%;
-	background-color:black;
+	
+	background-color:#bababa;
+}
+
+#main_column{
+	
 }
 #heading>*{
 	padding:10px;

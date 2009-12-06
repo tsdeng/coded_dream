@@ -8058,3 +8058,919 @@ Rendering template within layouts/application
 Rendering articles/index
   [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
 Completed in 22ms (View: 18, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show to xml (for 127.0.0.1 at 2009-12-06 18:46:33) [GET]
+  Parameters: {"id"=>"index"}
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/articles/index.xml]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-12-06 18:46:33) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 25ms (View: 6, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing ArticlesController#show to xml (for 127.0.0.1 at 2009-12-06 18:46:34) [GET]
+  Parameters: {"id"=>"index"}
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/articles/index.xml]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-12-06 18:46:34) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 105ms (View: 103, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:11:12) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:13:09) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:13:40) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 18ms (View: 14, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:15:35) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 19:16:01) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show to xml (for 127.0.0.1 at 2009-12-06 19:16:33) [GET]
+  Parameters: {"id"=>"index"}
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/articles/index.xml]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-12-06 19:16:33) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing ArticlesController#show to xml (for 127.0.0.1 at 2009-12-06 19:16:34) [GET]
+  Parameters: {"id"=>"index"}
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/articles/index.xml]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-12-06 19:16:34) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 26ms (View: 10, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:16:49) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#edit (for ::1 at 2009-12-06 19:16:57) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles/11/edit]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 19:17:04) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:17:08) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:20:51) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 25ms (View: 20, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:21:38) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:21:55) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 25ms (View: 17, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:22:04) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 18ms (View: 14, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:22:28) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:23:00) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 23ms (View: 18, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:23:31) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 22ms (View: 17, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:23:42) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 18ms (View: 14, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:23:56) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 73ms (View: 67, DB: 2) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:25:19) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 28ms (View: 24, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:25:58) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 18ms (View: 14, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:26:30) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 23ms (View: 17, DB: 2) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:26:54) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 18ms (View: 14, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:27:27) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 23ms (View: 18, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:29:24) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 22ms (View: 18, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:30:32) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 21ms (View: 15, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#edit (for ::1 at 2009-12-06 19:30:38) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/articles/11/edit]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 19:32:07) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:33:06) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-06 19:33:10) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 21ms (View: 17, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-06 19:34:04) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 21ms (View: 17, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 19:34:16) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:34:19) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 25ms (View: 19, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 19:34:22) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 15ms (View: 11, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:34:25) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 75ms (View: 71, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-06 19:34:29) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#templates to css (for ::1 at 2009-12-06 19:36:35) [GET]
+  Parameters: {"id"=>"preview"}
+
+ActionController::UnknownAction (No action responded to templates. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#templates to css (for ::1 at 2009-12-06 19:36:42) [GET]
+  Parameters: {"id"=>"preview"}
+
+ActionController::UnknownAction (No action responded to templates. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#templates to css (for ::1 at 2009-12-06 19:36:47) [GET]
+  Parameters: {"id"=>"preview"}
+
+ActionController::UnknownAction (No action responded to templates. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#templates to css (for ::1 at 2009-12-06 19:36:51) [GET]
+  Parameters: {"id"=>"preview"}
+
+ActionController::UnknownAction (No action responded to templates. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#templates to css (for ::1 at 2009-12-06 19:36:56) [GET]
+  Parameters: {"id"=>"preview"}
+
+ActionController::UnknownAction (No action responded to templates. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#templates to css (for ::1 at 2009-12-06 19:37:07) [GET]
+  Parameters: {"id"=>"preview"}
+
+ActionController::UnknownAction (No action responded to templates. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#create (for ::1 at 2009-12-06 19:37:20) [POST]
+  Parameters: {"article"=>{"title"=>"用CSS创建全屏高度背景的页面", "content"=>"有时我们希望背景颜色能够铺满整个屏幕\r\nbody,html {\r\nheight:100%;\r\n}\r\n<p>\r\n1.先把HTML和BODY的HEIGHT属性设为100%;保证content的高度能撑满浏览器;\r\n#content {\r\nmin-height:100%;\r\nposition: relative;\r\nbackground-color:black;\r\n}\r\n</p>\r\n<p>\r\n2.  然后把#content的高度也设置为100% ，但是这里我们使用了“min-height”属性，而不是的height属性，这是因为如果#main中的内容如果增加了，他的高度超过了浏览器窗口的 高度，那么如果把#content的高度仍然是100%，就会导致#footer仍然定位在浏器窗口的下端，从而遮盖了#content中的内容。\r\n</p>\r\n<p>\r\n   而使用min-height属性的作用就是使#content的高度“至少”为浏览器窗口的高度，而当如果它里面的内容增加了，他的高度会也跟随着增加，这才是我们需要的效果。\r\n</p>"}, "commit"=>"Create", "authenticity_token"=>"cX6uAtYU+4AuNT8H+SxN4GqfbBt0MiRopE8p0v46z1w="}
+  [4;36;1mArticle Create (0.6ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "updated_at", "content") VALUES('2009-12-06 11:37:20', '用CSS创建全屏高度背景的页面', '2009-12-06 11:37:20', '有时我们希望背景颜色能够铺满整个屏幕
+body,html {
+height:100%;
+}
+<p>
+1.先把HTML和BODY的HEIGHT属性设为100%;保证content的高度能撑满浏览器;
+#content {
+min-height:100%;
+position: relative;
+background-color:black;
+}
+</p>
+<p>
+2.  然后把#content的高度也设置为100% ，但是这里我们使用了“min-height”属性，而不是的height属性，这是因为如果#main中的内容如果增加了，他的高度超过了浏览器窗口的 高度，那么如果把#content的高度仍然是100%，就会导致#footer仍然定位在浏器窗口的下端，从而遮盖了#content中的内容。
+</p>
+<p>
+   而使用min-height属性的作用就是使#content的高度“至少”为浏览器窗口的高度，而当如果它里面的内容增加了，他的高度会也跟随着增加，这才是我们需要的效果。
+</p>')[0m
+Redirected to http://localhost:3000/console
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:37:20) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 28ms (View: 22, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:38:00) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 109ms (View: 102, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 19:38:13) [GET]
+  [4;35;1mArticle Load (0.9ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:38:35) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 29ms (View: 24, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-06 19:38:38) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 21ms (View: 16, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#templates to css (for ::1 at 2009-12-06 19:43:39) [GET]
+  Parameters: {"id"=>"preview"}
+
+ActionController::UnknownAction (No action responded to templates. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 19:44:28) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:44:38) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 28ms (View: 23, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 19:44:43) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show to xml (for 127.0.0.1 at 2009-12-06 19:46:33) [GET]
+  Parameters: {"id"=>"index"}
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/articles/index.xml]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-12-06 19:46:33) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing ArticlesController#show to xml (for 127.0.0.1 at 2009-12-06 19:46:34) [GET]
+  Parameters: {"id"=>"index"}
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/articles/index.xml]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-12-06 19:46:34) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:52:00) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 22ms (View: 17, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#edit (for ::1 at 2009-12-06 19:52:03) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 25ms (View: 18, DB: 0) | 200 OK [http://localhost/articles/12/edit]
+
+
+Processing ArticlesController#edit (for ::1 at 2009-12-06 19:52:31) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 26ms (View: 16, DB: 0) | 200 OK [http://localhost/articles/12/edit]
+
+
+Processing ArticlesController#edit (for ::1 at 2009-12-06 19:52:50) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles/12/edit]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 19:57:35) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 79ms (View: 74, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:57:37) [GET]
+  [4;36;1mArticle Load (0.8ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 25ms (View: 19, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#edit (for ::1 at 2009-12-06 19:57:39) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/11/edit]
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-06 19:57:57) [GET]
+
+ActionController::RoutingError (No route matches "/articles/11/templates/preview.html" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#edit (for ::1 at 2009-12-06 19:58:40) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://localhost/articles/11/edit]
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-06 19:58:44) [GET]
+
+ActionController::RoutingError (No route matches "/articles/11/templates/preview.css" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-06 19:59:23) [GET]
+
+ActionController::RoutingError (No route matches "/articles/11/templates/preview.css" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-06 19:59:28) [GET]
+
+ActionController::RoutingError (No route matches "/articles/11/templates/preview.css" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-06 19:59:29) [GET]
+
+ActionController::RoutingError (No route matches "/articles/11/templates/preview.css" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-12-06 19:59:38) [GET]
+
+ActionController::RoutingError (No route matches "/articles/11/templates/preview.css" with {:method=>:get}):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#update (for ::1 at 2009-12-06 19:59:40) [PUT]
+  Parameters: {"article"=>{"title"=>"myFirstPost", "content"=>"<h1>Ruby</h1>\r\n<img style=\"float:right\" src=\"http://www.ruby-lang.org/images/logo.gif\" alt=\"ruby logo\" />\r\n<p>\r\nA dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.\r\n</p>\r\n\r\n\r\n"}, "commit"=>"Update", "authenticity_token"=>"cX6uAtYU+4AuNT8H+SxN4GqfbBt0MiRopE8p0v46z1w=", "id"=>"11"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 11) [0m
+  [4;35;1mArticle Update (0.4ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2009-12-06 11:59:40', "content" = '<h1>Ruby</h1>
+<img style="float:right" src="http://www.ruby-lang.org/images/logo.gif" alt="ruby logo" />
+<p>
+A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.
+</p>
+
+
+' WHERE "id" = 11[0m
+Redirected to http://localhost:3000/console
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/articles/11]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:59:40) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 24ms (View: 19, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 19:59:48) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 19:59:52) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 21ms (View: 17, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-06 19:59:55) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#templates to css (for ::1 at 2009-12-06 20:00:44) [GET]
+  Parameters: {"id"=>"preview"}
+
+ActionController::UnknownAction (No action responded to templates. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#create (for ::1 at 2009-12-06 20:01:07) [POST]
+  Parameters: {"article"=>{"title"=>"关于JSF的一些思考", "content"=>"<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用过一段时间的Woodstock,当时感觉有点爽，但后来对于组件的控制方面的不是很好，没有在毕业设计上使用. 对于JSF想到了一些缺点，在这里分析一下。只是浅薄见解，欢迎讨论</p>\r\n<p><span style=\"color: #ff0000;\"><strong>1.有状态编程模型！？</strong>\r\n</span>\r\n\r\n</p>\r\n<p>&nbsp;&nbsp;&nbsp; JSF把Web编程搞的非常像JAVA SE GUI编程模型。维护组件树、组件状态。这让我感觉非常不舒服。Web开发就是Web开发，本身就是无状态的。所有行为都是基于request,session,application等范围。JSF硬要往GUI模型上套，结果就是非常不自然，有点四不像了。而且JSF维持的仅仅是视图状态，而不是数据状态，这种编程模型有点混乱。我认为Web就是Web!</p>\r\n<p><strong><span style=\"color: #ff0000;\">2。面向组件开发，更加OO!?</span>\r\n</strong>\r\n</p>\r\n<p>&nbsp;&nbsp;&nbsp; 这是在讨论去里看到有人这样为JSF宣传。我承认这句话的陈述是正确的。因为JSF把Web编程基本上变成了JAVA SE的GUI编程。确实是面向组件的。但是通过使用，我觉得这种做法的优势是否真的有那么大，值得考虑。相比JSF,PHP、Rails、JSP(JSTL)都没有刻意提供所谓的组件。这种做法方便了操纵HTML控件，直接、简单。而使用JSF控件时，则对于他的控制能力变得比较模糊并且不够灵活。我们需要在Backingbean里对组件进行控制。我感觉--太作做了。而且这种面向组件的方式所代来的好处远不能抵消它所代来的麻烦。</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 至于所谓的OO论，<span style=\"font-size: small;\"><span style=\"color: #000000;\"><span style=\"font-family: 宋体;\">表示层的东西有必要刻意强调像JSF这种面向组件，OO吗？对于Widget那种ajax的HTML面向组件我是可以理解的。PHP／RoR没有面向组件但也非常好用。表示层只需要提供一些页面的重用和插入功能就足以了。这让我想起了人们对JAVA EE过度分层的抱怨。于Rails形成了鲜明的对比。所谓的OO在服务器端、业务处理的代码中有很大用处。但是Web是瘦客户端(不像Swing)！在Web的表示层中如此大张旗鼓的宣扬JSF式的OO我认为是一种误区。我们可以看看PHP\\Rails这些语言框架，做到MVC，足够了。Web的表示层</span>\r\n</span>\r\n</span>\r\n\r\n需要的最重要的特性就是容易使用、容易控制、容易重用(也面片段)。</p>\r\n<p>&nbsp;&nbsp;&nbsp; JSF那种把HTML和后端弄到一起，模仿Swing,搞OO的做法有点费力不讨好的感觉。</p>\r\n\r\n"}, "commit"=>"Create", "authenticity_token"=>"cX6uAtYU+4AuNT8H+SxN4GqfbBt0MiRopE8p0v46z1w="}
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "updated_at", "content") VALUES('2009-12-06 12:01:07', '关于JSF的一些思考', '2009-12-06 12:01:07', '<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用过一段时间的Woodstock,当时感觉有点爽，但后来对于组件的控制方面的不是很好，没有在毕业设计上使用. 对于JSF想到了一些缺点，在这里分析一下。只是浅薄见解，欢迎讨论</p>
+<p><span style="color: #ff0000;"><strong>1.有状态编程模型！？</strong>
+</span>
+
+</p>
+<p>&nbsp;&nbsp;&nbsp; JSF把Web编程搞的非常像JAVA SE GUI编程模型。维护组件树、组件状态。这让我感觉非常不舒服。Web开发就是Web开发，本身就是无状态的。所有行为都是基于request,session,application等范围。JSF硬要往GUI模型上套，结果就是非常不自然，有点四不像了。而且JSF维持的仅仅是视图状态，而不是数据状态，这种编程模型有点混乱。我认为Web就是Web!</p>
+<p><strong><span style="color: #ff0000;">2。面向组件开发，更加OO!?</span>
+</strong>
+</p>
+<p>&nbsp;&nbsp;&nbsp; 这是在讨论去里看到有人这样为JSF宣传。我承认这句话的陈述是正确的。因为JSF把Web编程基本上变成了JAVA SE的GUI编程。确实是面向组件的。但是通过使用，我觉得这种做法的优势是否真的有那么大，值得考虑。相比JSF,PHP、Rails、JSP(JSTL)都没有刻意提供所谓的组件。这种做法方便了操纵HTML控件，直接、简单。而使用JSF控件时，则对于他的控制能力变得比较模糊并且不够灵活。我们需要在Backingbean里对组件进行控制。我感觉--太作做了。而且这种面向组件的方式所代来的好处远不能抵消它所代来的麻烦。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 至于所谓的OO论，<span style="font-size: small;"><span style="color: #000000;"><span style="font-family: 宋体;">表示层的东西有必要刻意强调像JSF这种面向组件，OO吗？对于Widget那种ajax的HTML面向组件我是可以理解的。PHP／RoR没有面向组件但也非常好用。表示层只需要提供一些页面的重用和插入功能就足以了。这让我想起了人们对JAVA EE过度分层的抱怨。于Rails形成了鲜明的对比。所谓的OO在服务器端、业务处理的代码中有很大用处。但是Web是瘦客户端(不像Swing)！在Web的表示层中如此大张旗鼓的宣扬JSF式的OO我认为是一种误区。我们可以看看PHP\Rails这些语言框架，做到MVC，足够了。Web的表示层</span>
+</span>
+</span>
+
+需要的最重要的特性就是容易使用、容易控制、容易重用(也面片段)。</p>
+<p>&nbsp;&nbsp;&nbsp; JSF那种把HTML和后端弄到一起，模仿Swing,搞OO的做法有点费力不讨好的感觉。</p>
+
+')[0m
+Redirected to http://localhost:3000/console
+Completed in 47ms (DB: 1) | 302 Found [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 20:01:08) [GET]
+  [4;36;1mArticle Load (1.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 27ms (View: 22, DB: 2) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 20:01:10) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 20:02:43) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 29ms (View: 25, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#new (for ::1 at 2009-12-06 20:02:57) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for ::1 at 2009-12-06 20:03:54) [POST]
+  Parameters: {"article"=>{"title"=>" Hibernate与TopLink在主键自动生成策略上的差异", "content"=>"<p>环境:JDK1.6+NetBeans6.5+MySQL5.1</p>\r\n\r\n<p>实体类包含主键字段ID:</p>\r\n<p>&nbsp;@Id<br />&nbsp;&nbsp;&nbsp; @GeneratedValue(strategy = GenerationType.AUTO)<br />&nbsp;&nbsp;&nbsp; private Long id;</p>\r\n\r\n<p>配置PersistenceUnit的时候，如果选用TopLink作为JPA实现：</p>\r\n<p>&lt;persistence version=\"1.0\" xmlns=\"<a href=\"http://java.sun.com/xml/ns/persistence\">http://java.sun.com/xml/ns/persistence</a>\" xmlns:xsi=\"<a href=\"http://www.w3.org/2001/XMLSchema-instance\">http://www.w3.org/2001/XMLSchema-instance</a>\" xsi:schemaLocation=\"<a href=\"http://java.sun.com/xml/ns/persistence\">http://java.sun.com/xml/ns/persistence</a> <a href=\"http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd\">http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd</a>\"&gt;<br />&nbsp; &lt;persistence-unit name=\"GuestBook-ejbPU\" transaction-type=\"JTA\"&gt;<br />&nbsp;&nbsp;&nbsp; &lt;provider&gt;oracle.toplink.essentials.PersistenceProvider&lt;/provider&gt;<br />&nbsp;&nbsp;&nbsp; &lt;jta-data-source&gt;jdbc/guestbook_datasource&lt;/jta-data-source&gt;<br />&nbsp;&nbsp;&nbsp; &lt;exclude-unlisted-classes&gt;false&lt;/exclude-unlisted-classes&gt;<br />&nbsp;&nbsp;&nbsp; &lt;properties&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;property name=\"toplink.ddl-generation\" value=\"create-tables\"/&gt;<br />&nbsp;&nbsp;&nbsp; &lt;/properties&gt;<br />&nbsp; &lt;/persistence-unit&gt;<br />&lt;/persistence&gt;</p>\r\n\r\n<p>将会生成User表和一个Sequence表，负责生成ID。此时就可以直接插入数据了。</p>\r\n\r\n<p>但是如果使用Hibernare作为JPA的实现:</p>\r\n<p>&lt;persistence version=\"1.0\" xmlns=\"<a href=\"http://java.sun.com/xml/ns/persistence\">http://java.sun.com/xml/ns/persistence</a>\" xmlns:xsi=\"<a href=\"http://www.w3.org/2001/XMLSchema-instance\">http://www.w3.org/2001/XMLSchema-instance</a>\" xsi:schemaLocation=\"<a href=\"http://java.sun.com/xml/ns/persistence\">http://java.sun.com/xml/ns/persistence</a> <a href=\"http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd\">http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd</a>\"&gt;<br />&nbsp; &lt;persistence-unit name=\"GuestBook-ejbPU\" transaction-type=\"JTA\"&gt;<br />&nbsp;&nbsp;&nbsp; &lt;provider&gt;org.hibernate.ejb.HibernatePersistence&lt;/provider&gt;<br />&nbsp;&nbsp;&nbsp; &lt;jta-data-source&gt;jdbc/guestbook_datasource&lt;/jta-data-source&gt;<br />&nbsp;&nbsp;&nbsp; &lt;exclude-unlisted-classes&gt;false&lt;/exclude-unlisted-classes&gt;<br />&nbsp;&nbsp;&nbsp; &lt;properties&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;property name=\"hibernate.hbm2ddl.auto\" value=\"update\"/&gt;<br />&nbsp;&nbsp;&nbsp; &lt;/properties&gt;<br />&nbsp; &lt;/persistence-unit&gt;<br />&lt;/persistence&gt;<br />只会生成一个User表。如果直接插入数据则会报主键的错误。此时需要做两件事:</p>\r\n\r\n<p>1.在MySQL中给ID设置一个DefaultValue</p>\r\n<p>2.将ID字段设置为自增autoIncrease</p>\r\n\r\n<p>ps:TopLink貌似更好用一些</p>\r\n"}, "commit"=>"Create", "authenticity_token"=>"cX6uAtYU+4AuNT8H+SxN4GqfbBt0MiRopE8p0v46z1w="}
+  [4;35;1mArticle Create (0.6ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "updated_at", "content") VALUES('2009-12-06 12:03:54', ' Hibernate与TopLink在主键自动生成策略上的差异', '2009-12-06 12:03:54', '<p>环境:JDK1.6+NetBeans6.5+MySQL5.1</p>
+
+<p>实体类包含主键字段ID:</p>
+<p>&nbsp;@Id<br />&nbsp;&nbsp;&nbsp; @GeneratedValue(strategy = GenerationType.AUTO)<br />&nbsp;&nbsp;&nbsp; private Long id;</p>
+
+<p>配置PersistenceUnit的时候，如果选用TopLink作为JPA实现：</p>
+<p>&lt;persistence version="1.0" xmlns="<a href="http://java.sun.com/xml/ns/persistence">http://java.sun.com/xml/ns/persistence</a>" xmlns:xsi="<a href="http://www.w3.org/2001/XMLSchema-instance">http://www.w3.org/2001/XMLSchema-instance</a>" xsi:schemaLocation="<a href="http://java.sun.com/xml/ns/persistence">http://java.sun.com/xml/ns/persistence</a> <a href="http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd</a>"&gt;<br />&nbsp; &lt;persistence-unit name="GuestBook-ejbPU" transaction-type="JTA"&gt;<br />&nbsp;&nbsp;&nbsp; &lt;provider&gt;oracle.toplink.essentials.PersistenceProvider&lt;/provider&gt;<br />&nbsp;&nbsp;&nbsp; &lt;jta-data-source&gt;jdbc/guestbook_datasource&lt;/jta-data-source&gt;<br />&nbsp;&nbsp;&nbsp; &lt;exclude-unlisted-classes&gt;false&lt;/exclude-unlisted-classes&gt;<br />&nbsp;&nbsp;&nbsp; &lt;properties&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;property name="toplink.ddl-generation" value="create-tables"/&gt;<br />&nbsp;&nbsp;&nbsp; &lt;/properties&gt;<br />&nbsp; &lt;/persistence-unit&gt;<br />&lt;/persistence&gt;</p>
+
+<p>将会生成User表和一个Sequence表，负责生成ID。此时就可以直接插入数据了。</p>
+
+<p>但是如果使用Hibernare作为JPA的实现:</p>
+<p>&lt;persistence version="1.0" xmlns="<a href="http://java.sun.com/xml/ns/persistence">http://java.sun.com/xml/ns/persistence</a>" xmlns:xsi="<a href="http://www.w3.org/2001/XMLSchema-instance">http://www.w3.org/2001/XMLSchema-instance</a>" xsi:schemaLocation="<a href="http://java.sun.com/xml/ns/persistence">http://java.sun.com/xml/ns/persistence</a> <a href="http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd</a>"&gt;<br />&nbsp; &lt;persistence-unit name="GuestBook-ejbPU" transaction-type="JTA"&gt;<br />&nbsp;&nbsp;&nbsp; &lt;provider&gt;org.hibernate.ejb.HibernatePersistence&lt;/provider&gt;<br />&nbsp;&nbsp;&nbsp; &lt;jta-data-source&gt;jdbc/guestbook_datasource&lt;/jta-data-source&gt;<br />&nbsp;&nbsp;&nbsp; &lt;exclude-unlisted-classes&gt;false&lt;/exclude-unlisted-classes&gt;<br />&nbsp;&nbsp;&nbsp; &lt;properties&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;property name="hibernate.hbm2ddl.auto" value="update"/&gt;<br />&nbsp;&nbsp;&nbsp; &lt;/properties&gt;<br />&nbsp; &lt;/persistence-unit&gt;<br />&lt;/persistence&gt;<br />只会生成一个User表。如果直接插入数据则会报主键的错误。此时需要做两件事:</p>
+
+<p>1.在MySQL中给ID设置一个DefaultValue</p>
+<p>2.将ID字段设置为自增autoIncrease</p>
+
+<p>ps:TopLink貌似更好用一些</p>
+')[0m
+Redirected to http://localhost:3000/console
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2009-12-06 20:03:54) [GET]
+  [4;36;1mArticle Load (1.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 127ms (View: 121, DB: 2) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 20:03:59) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 20:06:08) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for ::1 at 2009-12-06 20:08:27) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/articles]
