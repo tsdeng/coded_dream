@@ -5,6 +5,7 @@
 	color:#333333;
 }
 ul#navigation{
+	margin:0;
 	margin-top:20px;
 	width:auto;
 	float:left;
@@ -21,7 +22,7 @@ ul#navigation li{
 	height:158px;
 
 }
-body,html,#container{
+body,html{
 	height:100%;
 }
 
@@ -29,13 +30,16 @@ body,html,#container{
 	float:right;
 	color:black;
 }
-/*define color and font*/
-#container{
-	background-color: #d7d7d7;
-}
-body{
 
+/*define color and font*/
+
+body{
+    background-color: #d7d7d7;
 	background:  url(/images/bg_shadow.png) repeat-y center
+}
+#container{
+	min-height:100%;
+	background-color:black;
 }
 #heading>*{
 	padding:10px;
