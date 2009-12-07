@@ -9275,3 +9275,29 @@ Rendering template within layouts/application
 Rendering users/login
   [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
 Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing ArticlesController#show to xml (for 127.0.0.1 at 2009-12-06 21:16:34) [GET]
+  Parameters: {"id"=>"index"}
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/articles/index.xml]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-12-06 21:16:34) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing ArticlesController#show to xml (for 127.0.0.1 at 2009-12-06 21:16:34) [GET]
+  Parameters: {"id"=>"index"}
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/articles/index.xml]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-12-06 21:16:34) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/users/login]
