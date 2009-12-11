@@ -38,6 +38,10 @@ div.article{
 	clear:both;
 	margin-bottom:10px;
 }
+span.created_at{
+    diaplay:block;
+    float:right;
+}
 
 /*define color and font*/
 div.article .field{

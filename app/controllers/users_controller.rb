@@ -7,13 +7,29 @@ class UsersController < ApplicationController
         flash[:notice]="unmatched username and password"
         return
       end
-        session[:user_id]=current_user.id
-        redirect_to :controller=>"console"
+      session[:user_id]=current_user.id
+      redirect_to :controller=>"console"
         
     
     end
   end
 
+  def home
+    begin
+      if params[:username]
+        @author=User.find_by_username(params[:username])
+        @articles=Article.paginate_by_author_id @author.id,:page=>params[:page]||1,:per_page=>3,:order=>"created_at DESC"
+        return
+      elsif session[:user_id]
+        @author=User.find(session[:user_id])
+        @articles=Article.paginate_by_author_id @author.id,:page=>params[:page]||1,:per_page=>3,:order=>"created_at DESC"
+        return
+      end
+      raise RuntimeError
+    rescue
+      redirect_to :controller=>:users,:action=>:register
+    end
+  end
 
   def register
     if request.post?

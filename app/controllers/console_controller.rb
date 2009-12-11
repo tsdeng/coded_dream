@@ -1,7 +1,7 @@
 class ConsoleController < ApplicationController
   before_filter :check_login,:remember_url
   def index
-    @articles = Article.all
+    @articles = Article.find_all_by_author_id(session[:user_id])
   end
 
 end

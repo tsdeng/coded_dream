@@ -1,16 +1,20 @@
 class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.xml
-  before_filter :check_login,:except=>[:index]
+  before_filter :check_login,:except=>[:index,:home_index]
   
   def index
-    @articles = Article.all
+#    @articles = Article.all
+    @articles=Article.paginate_by_author_id session[:user_id],:page=>params[:page]||1,:per_page=>3
+
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @articles }
     end
   end
+
+
 
   # GET /articles/1
   # GET /articles/1.xml
@@ -42,7 +46,9 @@ class ArticlesController < ApplicationController
   # POST /articles
   # POST /articles.xml
   def create
-    @article = Article.new(params[:article])
+    author=User.find(session[:user_id])
+#    @article = Article.new(params[:article])
+   @article=author.articles.build(params[:article])
 
     respond_to do |format|
       if @article.save

@@ -36,7 +36,7 @@
 				<q>2009/12/5 am 11:24</q>
 				</div>
 				<ul id="navigation" class="clearfix">
-					<li><%=link_to :home,:controller=>"articles"%></li>
+					<li><%=link_to :home,:controller=>"users",:action=>"home"%></li>
 					<li><%=link_to :login,:controller=>"users",:action=>:login%></li>
 					<li><%=link_to :register,:controller=>"users",:action=>:register%></li>
 					<li><%=link_to_when_login :logout,"",:controller=>"users",:action=>"logout"%></li>
