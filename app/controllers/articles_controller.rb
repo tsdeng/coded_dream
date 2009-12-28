@@ -4,10 +4,7 @@ class ArticlesController < ApplicationController
   before_filter :check_login,:except=>[:index,:home_index]
   
   def index
-#    @articles = Article.all
     @articles=Article.paginate_by_author_id session[:user_id],:page=>params[:page]||1,:per_page=>3
-
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @articles }
@@ -20,7 +17,6 @@ class ArticlesController < ApplicationController
   # GET /articles/1.xml
   def show
     @article = Article.find(params[:id])
-
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @article }
@@ -31,7 +27,6 @@ class ArticlesController < ApplicationController
   # GET /articles/new.xml
   def new
     @article = Article.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @article }
@@ -49,14 +44,11 @@ class ArticlesController < ApplicationController
     author=User.find(session[:user_id])
 #    @article = Article.new(params[:article])
    @article=author.articles.build(params[:article])
-
     respond_to do |format|
       if @article.save
         flash[:notice] = 'Article was successfully created.'
         format.html { 
-          
           redirect_to_remembered_url
-         
           }
         format.xml  { render :xml => @article, :status => :created, :location => @article }
       else
@@ -70,7 +62,6 @@ class ArticlesController < ApplicationController
   # PUT /articles/1.xml
   def update
     @article = Article.find(params[:id])
-
     respond_to do |format|
       if @article.update_attributes(params[:article])
         flash[:notice] = 'Article was successfully updated.'
@@ -88,7 +79,6 @@ class ArticlesController < ApplicationController
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
-
     respond_to do |format|
       format.html { redirect_to_remembered_url}
       format.xml  { head :ok }

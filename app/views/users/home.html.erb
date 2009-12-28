@@ -10,10 +10,10 @@
 
 <div id="article_list">
   <% @articles.each do |article| %>
-    <h3><a href="#"><%= article.title %><span class="created_at"><%=article.created_at.localtime.strftime("%Y/%m/%d %X")%></span></a> </h3>
+    <h3><a href="www.sina.con.cn"><%= article.title %><span class="created_at"><%=article.created_at.localtime.strftime("%Y/%m/%d %X")%></span></a> </h3>
     <div>
       <p>
-        <%=article.content %>
+        <%=article.content%>
       </p>
     </div>
   <% end %>

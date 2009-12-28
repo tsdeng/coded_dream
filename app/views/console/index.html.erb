@@ -1,25 +1,33 @@
 <h2>console</h2>
+<div id="left_col" class="grid_8 alpha">
+<ul class="articles">
 
-<% @articles.each do |article| %>
-    <div class="grid_12 alpha omega article clearfix">
-        <div class="grid_2 alpha field">
-            title:
-        </div>
-        <div class="grid_10 omega">
-            <%= link_to article.title, edit_article_path(article) %>
-        </div>
-        <div class="grid_2 alpha field">
-            content:
-        </div>
-        <div class="grid_10 omega">
-            <%= h article.content %>
-        </div>
-        <div class="grid_12 alpha omega">
-            <%= link_to 'Edit', edit_article_path(article),:class=>"operation" %>
-            <%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete,:class=>"operation" %>
-        </div>
-    </div>
+  <% @articles.each do |article| %>
+    <li>
+      <h4>Title:<span class="title"><%= link_to article.title, edit_article_path(article) %></span></h4>
+      <div class="content">
+        <%= h article.content %>
+      </div>
+      
+      
+      <%= link_to 'Edit', edit_article_path(article),:class=>"operation" %>
+      <%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete,:class=>"operation" %>
+    </li>
+  <% end %>
+  <%= link_to 'New article', new_article_path %>
+</ul>
+</div>
+<div id="right_col" class="grid_4 omega">
+  <div id="catgory">
+    <h3>Select a category</h3>
+    <ul>
+      <li>tech</li>
+      <li>life</li>
+      <li>music</li>
 
-<% end %>
-<%= link_to 'New article', new_article_path %>
+    </ul>
+
+  </div>
+
+</div>
 
