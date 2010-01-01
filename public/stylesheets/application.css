@@ -114,7 +114,7 @@ form.comment_form label{
     color: #cccccc;
     text-align: right;
 }
-form.comment_form input[type="text"],textarea{
+form.comment_form input[type="text"],form.comment_form textarea{
      width: 20em;
     background-color: #666666;
     border:0;
