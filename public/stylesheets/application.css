@@ -39,6 +39,13 @@ span.created_at{
 }
 
 /*define color and font*/
+p.articleContent{
+    color: #ff9900;
+}
+div.notice *{
+    color: #ffff33;
+    margin:0px;
+}
 ul.articles li{
     list-style:none;
     border-bottom: 5px solid #999;
@@ -76,8 +83,8 @@ body{
 	padding:10px;
 }
 #heading{
-	background: #333333 url('/images/heading_light.png') repeat-y center;
-    border:10px solid white;
+    background: black url('/images/heading_light.png') repeat-y center;
+    border:1px dotted white;
 }
 #heading h1{
     
@@ -89,4 +96,38 @@ body{
 	text-decoration: none;
 	color:white;
 }
-/*define layout*/
+
+
+/*define style for home page elements*/
+form.comment_form{
+    border: 1px dotted orange;
+    max-height: 15em;
+}
+form.comment_form p{
+    margin:0;
+    margin-top: 2px;
+}
+form.comment_form label{
+    padding-right: 5px;
+    float:left;
+    width: 8em;
+    color: #cccccc;
+    text-align: right;
+}
+form.comment_form input[type="text"],textarea{
+     width: 20em;
+    background-color: #666666;
+    border:0;
+    color:white;
+}
+
+form.comment_form textarea{
+    height:3em;
+}
+div.comments_list{
+    border: 1px white dashed;
+    max-height: 20em;
+    overflow: auto;
+    color:red;
+    /*background-color: #cccccc;*/
+}

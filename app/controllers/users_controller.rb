@@ -41,9 +41,12 @@ class UsersController < ApplicationController
         return
       end
       user=User.new(params[:user])
-      user.save
-      flash[:notice]="you can login with your password now"
-      redirect_to :action=>"login"
+      if user.save
+        flash[:notice]="you can login with your password now"
+        redirect_to :action=>"login"
+      else
+        flash[:notice]=user.errors.full_messages.map{|message| "<p>#{message}</p>"}.join
+      end
     end
   end
 
