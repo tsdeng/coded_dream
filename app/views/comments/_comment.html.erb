@@ -1,6 +1,6 @@
 <div class="comment">
 
-  <h4><%=comment.class%><%=comment.title%> </h4>
+  <h4><%=comment.author_name%> said : <%=comment.title%>   <%=comment.created_at.localtime.strftime("%Y/%m/%d %X")%></h4>
   <div class="commentBody">
     <%=comment.content%>
   </div>
