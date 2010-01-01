@@ -10,4 +10,14 @@ class CommentsController < ApplicationController
 
   end
 
+  def destroy
+    Comment.find(params[:id]).destroy
+    render :text=>"deleted!"
+  end
+
+  def list
+    article_id=params[:id];
+    render :partial=>"/comments/comment",:collection=>Article.find(article_id).comments
+  end
+
 end

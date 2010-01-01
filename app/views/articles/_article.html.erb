@@ -1,5 +1,5 @@
 <h3><a href="www.sina.con.cn"><%= article.title %><span class="created_at"><%=article.created_at.localtime.strftime("%Y/%m/%d %X")%></span></a> </h3>
-<div class="articleBody">
+<div id="<%=article.id%>" class="articleBody">
   <p class="articleContent">
     <%=article.content%>
   </p>
@@ -11,7 +11,7 @@
   <%form_for(article.comments.build,:url=>{:controller=>"comments",:action=>"create"},:html=>{:class=>"ajax comment_form"}) do |f|%>
 
     <%=f.hidden_field :article_id%>
-  <p>
+    <p>
       <label>Your Name:</label>
       <%=f.text_field :author_name%>
     </p>

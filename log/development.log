@@ -22656,3 +22656,2125 @@ Rendering users/home
 Rendered comments/_comment (0.1ms)
 Rendered articles/_article (8.3ms)
 Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 16:49:23) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "article_id"=>"2", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 08:49:23', 'dd', NULL, '2010-01-01 08:49:23', 2, 'd')[0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 2) [0m
+Rendered comments/_comment (0.8ms)
+Rendered comments/_comment (0.1ms)
+Completed in 62ms (View: 51, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 16:49:32) [GET]
+  Parameters: {"username"=>"tsdeng"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'tsdeng') LIMIT 1[0m
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 2) [0m
+Rendered comments/_comment (0.2ms)
+Rendered comments/_comment (0.1ms)
+Rendered articles/_article (10.3ms)
+Completed in 27ms (View: 18, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 16:49:38) [POST]
+  Parameters: {"comment"=>{"title"=>"", "author_name"=>"asdf", "article_id"=>"2", "content"=>""}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 08:49:38', '', 'asdf', '2010-01-01 08:49:38', 2, '')[0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 2) [0m
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 14ms (View: 2, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 16:52:22) [GET]
+  Parameters: {"username"=>"tsdeng"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'tsdeng') LIMIT 1[0m
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 2) [0m
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendered comments/_comment (1.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendered comments/_comment (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendered comments/_comment (0.4ms)
+Rendered articles/_article (36.6ms)
+Completed in 51ms (View: 41, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing UsersController#login (for ::1 at 2010-01-01 16:52:27) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2010-01-01 16:52:33) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg=", "username"=>"tsdeng", "password"=>"tsdeng"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'tsdeng' AND "users"."password" = 'tsdeng') LIMIT 1[0m
+Redirected to http://localhost:3000/console
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-01 16:52:33) [GET]
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 25ms (View: 20, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 16:52:35) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 2) [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendered comments/_comment (0.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendered comments/_comment (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendered comments/_comment (0.4ms)
+Rendered articles/_article (10.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-01 16:56:28) [GET]
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 20ms (View: 14, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#destroy (for ::1 at 2010-01-01 16:56:38) [DELETE]
+  Parameters: {"authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg=", "id"=>"2"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+  [4;36;1mArticle Destroy (0.4ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/console
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/articles/2]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-01 16:56:38) [GET]
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#new (for ::1 at 2010-01-01 17:01:41) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 20ms (View: 16, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for ::1 at 2010-01-01 17:01:48) [POST]
+  Parameters: {"article"=>{"title"=>"asdfasdfa", "content"=>"asdfdasf"}, "commit"=>"Create", "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "updated_at", "content", "author_id") VALUES('2010-01-01 09:01:48', 'asdfasdfa', '2010-01-01 09:01:48', 'asdfdasf', 1)[0m
+Redirected to http://localhost:3000/console
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/articles]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-01 17:01:48) [GET]
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:02:33) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+Rendered articles/_article (8.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 25ms (View: 15, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:02:42) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "author_name"=>"dts", "article_id"=>"3", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:02:42', 'dd', 'dts', '2010-01-01 09:02:42', 3, 'd')[0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (4.6ms)
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:02:44) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "author_name"=>"dts", "article_id"=>"3", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:02:44', 'dd', 'dts', '2010-01-01 09:02:44', 3, 'd')[0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 16ms (View: 4, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:02:45) [GET]
+  Parameters: {"method"=>"delete", "id"=>"12"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 12) [0m
+  [4;36;1mComment Destroy (0.3ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 12[0m
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/comments/destroy/12?method=delete]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:02:50) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.3ms)
+Rendered articles/_article (10.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:03:08) [GET]
+  Parameters: {"method"=>"delete", "id"=>"13"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 13) [0m
+  [4;35;1mComment Destroy (0.4ms)[0m   [0mDELETE FROM "comments" WHERE "id" = 13[0m
+Completed in 60ms (View: 1, DB: 1) | 200 OK [http://localhost/comments/destroy/13?method=delete]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:07:24) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+Rendered articles/_article (8.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 24ms (View: 14, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:07:27) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "author_name"=>"dts", "article_id"=>"3", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:07:27', 'dd', 'dts', '2010-01-01 09:07:27', 3, 'd')[0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (2.9ms)
+Completed in 18ms (View: 7, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:07:30) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "author_name"=>"dts", "article_id"=>"3", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:07:30', 'dd', 'dts', '2010-01-01 09:07:30', 3, 'd')[0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 16ms (View: 4, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:07:31) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "author_name"=>"dts", "article_id"=>"3", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:07:31', 'dd', 'dts', '2010-01-01 09:07:31', 3, 'd')[0m
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 17ms (View: 5, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:07:32) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "author_name"=>"dts", "article_id"=>"3", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:07:32', 'dd', 'dts', '2010-01-01 09:07:32', 3, 'd')[0m
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 19ms (View: 6, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:07:33) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "author_name"=>"dts", "article_id"=>"3", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:07:33', 'dd', 'dts', '2010-01-01 09:07:33', 3, 'd')[0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 19ms (View: 7, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:07:36) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Rendered articles/_article (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 29ms (View: 20, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:07:39) [GET]
+  Parameters: {"class"=>"ajaxDelete", "id"=>"14"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 14) [0m
+  [4;36;1mComment Destroy (0.2ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 14[0m
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/comments/destroy/14?class=ajaxDelete]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:08:57) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (2.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+Rendered articles/_article (18.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 35ms (View: 24, DB: 2) | 200 OK [http://localhost/users/home]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:08:59) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Rendered articles/_article (12.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 29ms (View: 18, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:09:02) [POST]
+  Parameters: {"id"=>"15"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 15) [0m
+  [4;36;1mComment Destroy (0.3ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 15[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/comments/destroy/15]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:09:05) [POST]
+  Parameters: {"id"=>"16"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 16) [0m
+  [4;36;1mComment Destroy (0.2ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 16[0m
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/comments/destroy/16]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:09:08) [POST]
+  Parameters: {"id"=>"17"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 17) [0m
+  [4;36;1mComment Destroy (0.2ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 17[0m
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/comments/destroy/17]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:09:11) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.2ms)
+Rendered articles/_article (9.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:13:54) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.4ms)
+Rendered articles/_article (11.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 30ms (View: 20, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:20:20) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.2ms)
+Rendered articles/_article (10.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:20:25) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "author_name"=>"dts", "article_id"=>"3", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:20:25', 'dd', 'dts', '2010-01-01 09:20:25', 3, 'd')[0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 17ms (View: 4, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:20:25) [GET]
+  Parameters: {"id"=>"3"}
+
+NameError (undefined local variable or method `comment' for #<CommentsController:0x25ac13c>):
+  app/controllers/comments_controller.rb:20:in `list'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (26.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:20:27) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "author_name"=>"dts", "article_id"=>"3", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:20:27', 'dd', 'dts', '2010-01-01 09:20:27', 3, 'd')[0m
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.0ms)
+Completed in 17ms (View: 5, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:20:27) [GET]
+  Parameters: {"id"=>"3"}
+
+NameError (undefined local variable or method `comment' for #<CommentsController:0x2456300>):
+  app/controllers/comments_controller.rb:20:in `list'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (77.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:20:33) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "author_name"=>"dts", "article_id"=>"3", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;35;1mComment Create (0.4ms)[0m   [0mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:20:33', 'dd', 'dts', '2010-01-01 09:20:33', 3, 'd')[0m
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 19ms (View: 6, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:20:33) [GET]
+  Parameters: {"id"=>"3"}
+
+NameError (undefined local variable or method `comment' for #<CommentsController:0x2563ec8>):
+  app/controllers/comments_controller.rb:20:in `list'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (24.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:21:14) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Rendered articles/_article (13.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 30ms (View: 20, DB: 2) | 200 OK [http://localhost/users/home]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:21:21) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "author_name"=>"dts", "article_id"=>"3", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:21:21', 'dd', 'dts', '2010-01-01 09:21:21', 3, 'd')[0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 19ms (View: 7, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:21:21) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (2.9ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 18ms (View: 8, DB: 3) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:21:22) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "author_name"=>"dts", "article_id"=>"3", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:21:22', 'dd', 'dts', '2010-01-01 09:21:22', 3, 'd')[0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+Completed in 19ms (View: 7, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:21:22) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.6ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:21:22) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "author_name"=>"dts", "article_id"=>"3", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:21:22', 'dd', 'dts', '2010-01-01 09:21:22', 3, 'd')[0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.6ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 20ms (View: 8, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:21:22) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.6ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:21:22) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "author_name"=>"dts", "article_id"=>"3", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;35;1mComment Create (0.4ms)[0m   [0mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:21:22', 'dd', 'dts', '2010-01-01 09:21:22', 3, 'd')[0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.7ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:21:23) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.7ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:21:23) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "author_name"=>"dts", "article_id"=>"3", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:21:23', 'dd', 'dts', '2010-01-01 09:21:23', 3, 'd')[0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.7ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+Completed in 21ms (View: 10, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:21:23) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.8ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:21:23) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "author_name"=>"dts", "article_id"=>"3", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:21:23', 'dd', 'dts', '2010-01-01 09:21:23', 3, 'd')[0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.8ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+Completed in 23ms (View: 11, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:21:23) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.8ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:21:23) [POST]
+  Parameters: {"comment"=>{"title"=>"dd", "author_name"=>"dts", "article_id"=>"3", "content"=>"d"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;36;1mComment Create (0.4ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:21:23', 'dd', 'dts', '2010-01-01 09:21:23', 3, 'd')[0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.9ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+Completed in 26ms (View: 12, DB: 2) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:21:23) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (1.1ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:21:26) [GET]
+  Parameters: {"id"=>"19"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 19) [0m
+  [4;36;1mComment Destroy (0.3ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 19[0m
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/comments/destroy/19]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:21:44) [POST]
+  Parameters: {"id"=>"18"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 18) [0m
+  [4;36;1mComment Destroy (0.2ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 18[0m
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/comments/destroy/18]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:28:24) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;35;1mComment Load (0.8ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+Rendered articles/_article (17.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 33ms (View: 23, DB: 2) | 200 OK [http://localhost/users/home]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:28:29) [POST]
+  Parameters: {"id"=>"20"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 20) [0m
+  [4;35;1mComment Destroy (0.3ms)[0m   [0mDELETE FROM "comments" WHERE "id" = 20[0m
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/comments/destroy/20]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:28:29) [GET]
+  Parameters: {"id"=>"undefined"}
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=undefined):
+  app/controllers/comments_controller.rb:20:in `list'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (25.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:28:30) [POST]
+  Parameters: {"id"=>"20"}
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 20) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Comment with ID=20):
+  app/controllers/comments_controller.rb:14:in `destroy'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (25.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:28:31) [POST]
+  Parameters: {"id"=>"20"}
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 20) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Comment with ID=20):
+  app/controllers/comments_controller.rb:14:in `destroy'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (87.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:28:36) [POST]
+  Parameters: {"id"=>"22"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 22) [0m
+  [4;36;1mComment Destroy (0.3ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 22[0m
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/comments/destroy/22]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:28:36) [GET]
+  Parameters: {"id"=>"undefined"}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=undefined):
+  app/controllers/comments_controller.rb:20:in `list'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (25.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:28:53) [POST]
+  Parameters: {"id"=>"26"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 26) [0m
+  [4;35;1mComment Destroy (0.4ms)[0m   [0mDELETE FROM "comments" WHERE "id" = 26[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/comments/destroy/26]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:28:53) [GET]
+  Parameters: {"id"=>"undefined"}
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=undefined):
+  app/controllers/comments_controller.rb:20:in `list'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (90.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:28:56) [POST]
+  Parameters: {"id"=>"28"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 28) [0m
+  [4;36;1mComment Destroy (0.4ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 28[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/comments/destroy/28]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:28:56) [GET]
+  Parameters: {"id"=>"undefined"}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=undefined):
+  app/controllers/comments_controller.rb:20:in `list'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:29:32) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+Rendered articles/_article (14.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 30ms (View: 20, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:29:36) [POST]
+  Parameters: {"id"=>"21"}
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 21) [0m
+  [4;36;1mComment Destroy (0.3ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 21[0m
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://localhost/comments/destroy/21]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:29:36) [GET]
+  Parameters: {"id"=>"undefined"}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=undefined):
+  app/controllers/comments_controller.rb:20:in `list'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (25.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:29:43) [POST]
+  Parameters: {"id"=>"23"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 23) [0m
+  [4;35;1mComment Destroy (0.3ms)[0m   [0mDELETE FROM "comments" WHERE "id" = 23[0m
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/comments/destroy/23]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:29:43) [GET]
+  Parameters: {"id"=>"undefined"}
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=undefined):
+  app/controllers/comments_controller.rb:20:in `list'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (25.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:30:24) [POST]
+  Parameters: {"id"=>"27"}
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 27) [0m
+  [4;36;1mComment Destroy (0.3ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 27[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://localhost/comments/destroy/27]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:31:38) [GET]
+  Parameters: {"id"=>"undefined"}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=undefined):
+  app/controllers/comments_controller.rb:20:in `list'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (25.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:31:39) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.1ms)
+Rendered articles/_article (11.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 28ms (View: 17, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:31:39) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Rendered articles/_article (10.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 27ms (View: 17, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:31:47) [POST]
+  Parameters: {"comment"=>{"title"=>"asdf", "author_name"=>"asdf", "article_id"=>"3", "content"=>"asdf"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:31:47', 'asdf', 'asdf', '2010-01-01 09:31:47', 3, 'asdf')[0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 16ms (View: 5, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:31:47) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:31:48) [POST]
+  Parameters: {"comment"=>{"title"=>"asdf", "author_name"=>"asdf", "article_id"=>"3", "content"=>"asdf"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;35;1mComment Create (0.4ms)[0m   [0mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:31:48', 'asdf', 'asdf', '2010-01-01 09:31:48', 3, 'asdf')[0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+Completed in 18ms (View: 6, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:31:48) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:31:50) [POST]
+  Parameters: {"id"=>"24"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 24) [0m
+  [4;35;1mComment Destroy (0.3ms)[0m   [0mDELETE FROM "comments" WHERE "id" = 24[0m
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/comments/destroy/24]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:31:50) [GET]
+  Parameters: {"id"=>"undefined"}
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=undefined):
+  app/controllers/comments_controller.rb:20:in `list'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (26.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:31:58) [POST]
+  Parameters: {"id"=>"30"}
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 30) [0m
+  [4;36;1mComment Destroy (0.5ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 30[0m
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://localhost/comments/destroy/30]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:31:58) [GET]
+  Parameters: {"id"=>"undefined"}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=undefined):
+  app/controllers/comments_controller.rb:20:in `list'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (87.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:32:16) [POST]
+  Parameters: {"id"=>"29"}
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 29) [0m
+  [4;35;1mComment Destroy (0.3ms)[0m   [0mDELETE FROM "comments" WHERE "id" = 29[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/comments/destroy/29]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:32:17) [GET]
+  Parameters: {"id"=>"undefined"}
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=undefined):
+  app/controllers/comments_controller.rb:20:in `list'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (25.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:32:20) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.4ms)
+Rendered articles/_article (10.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 26ms (View: 16, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:32:25) [POST]
+  Parameters: {"comment"=>{"title"=>"asdf", "author_name"=>"asdf", "article_id"=>"3", "content"=>"asdf"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:32:25', 'asdf', 'asdf', '2010-01-01 09:32:25', 3, 'asdf')[0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 17ms (View: 4, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:32:25) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:32:25) [POST]
+  Parameters: {"comment"=>{"title"=>"asdf", "author_name"=>"asdf", "article_id"=>"3", "content"=>"asdf"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:32:25', 'asdf', 'asdf', '2010-01-01 09:32:25', 3, 'asdf')[0m
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.1ms)
+Completed in 18ms (View: 5, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:32:25) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:32:26) [POST]
+  Parameters: {"comment"=>{"title"=>"asdf", "author_name"=>"asdf", "article_id"=>"3", "content"=>"asdf"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:32:26', 'asdf', 'asdf', '2010-01-01 09:32:26', 3, 'asdf')[0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 17ms (View: 6, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:32:26) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:32:26) [POST]
+  Parameters: {"comment"=>{"title"=>"asdf", "author_name"=>"asdf", "article_id"=>"3", "content"=>"asdf"}, "authenticity_token"=>"BC9mBR1hTxQE4Ginu3Ca6ZJnpUblfkFvFzfOCp0Vllg="}
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:32:26', 'asdf', 'asdf', '2010-01-01 09:32:26', 3, 'asdf')[0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+Completed in 18ms (View: 7, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:32:26) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:32:32) [POST]
+  Parameters: {"id"=>"32"}
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 32) [0m
+  [4;35;1mComment Destroy (0.3ms)[0m   [0mDELETE FROM "comments" WHERE "id" = 32[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://localhost/comments/destroy/32]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:32:59) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Rendered articles/_article (12.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 29ms (View: 19, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:33:00) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Rendered articles/_article (12.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 28ms (View: 18, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:33:18) [POST]
+  Parameters: {"id"=>"25"}
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 25) [0m
+  [4;35;1mComment Destroy (0.4ms)[0m   [0mDELETE FROM "comments" WHERE "id" = 25[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/comments/destroy/25]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:33:39) [GET]
+Redirected to http://localhost:3000/users/register
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/users/home]
+
+
+Processing UsersController#register (for ::1 at 2010-01-01 17:33:39) [GET]
+Rendering template within layouts/application
+Rendering users/register
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://localhost/users/register]
+
+
+Processing UsersController#register (for ::1 at 2010-01-01 17:33:39) [GET]
+Rendering template within layouts/application
+Rendering users/register
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/users/register]
+
+
+Processing UsersController#login (for ::1 at 2010-01-01 17:33:42) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2010-01-01 17:33:49) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"HGNvL61dHan1Zozslrgsu9wpCUAnaTEiqtArBTjRw0c=", "username"=>"tsdeng", "password"=>"tsdeng"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'tsdeng' AND "users"."password" = 'tsdeng') LIMIT 1[0m
+Redirected to http://localhost:3000/console
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-01 17:33:50) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:33:52) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.9ms)
+Rendered articles/_article (12.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 29ms (View: 19, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:34:04) [POST]
+  Parameters: {"id"=>"33"}
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 33) [0m
+  [4;35;1mComment Destroy (0.3ms)[0m   [0mDELETE FROM "comments" WHERE "id" = 33[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://localhost/comments/destroy/33]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:34:33) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Rendered articles/_article (65.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 81ms (View: 71, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:34:33) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Rendered articles/_article (12.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 28ms (View: 18, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:34:44) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Rendered articles/_article (10.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:35:00) [POST]
+  Parameters: {"id"=>"31"}
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 31) [0m
+  [4;35;1mComment Destroy (0.4ms)[0m   [0mDELETE FROM "comments" WHERE "id" = 31[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://localhost/comments/destroy/31]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:35:09) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.4ms)
+Rendered articles/_article (11.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 28ms (View: 17, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:35:15) [POST]
+  Parameters: {"comment"=>{"title"=>"asdf", "author_name"=>"dfsa", "article_id"=>"3", "content"=>"asdf"}, "authenticity_token"=>"HGNvL61dHan1Zozslrgsu9wpCUAnaTEiqtArBTjRw0c="}
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:35:15', 'asdf', 'dfsa', '2010-01-01 09:35:15', 3, 'asdf')[0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 16ms (View: 4, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:35:15) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:35:15) [POST]
+  Parameters: {"comment"=>{"title"=>"asdf", "author_name"=>"dfsa", "article_id"=>"3", "content"=>"asdf"}, "authenticity_token"=>"HGNvL61dHan1Zozslrgsu9wpCUAnaTEiqtArBTjRw0c="}
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:35:15', 'asdf', 'dfsa', '2010-01-01 09:35:15', 3, 'asdf')[0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 17ms (View: 5, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:35:15) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 68ms (View: 60, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:35:15) [POST]
+  Parameters: {"comment"=>{"title"=>"asdf", "author_name"=>"dfsa", "article_id"=>"3", "content"=>"asdf"}, "authenticity_token"=>"HGNvL61dHan1Zozslrgsu9wpCUAnaTEiqtArBTjRw0c="}
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:35:15', 'asdf', 'dfsa', '2010-01-01 09:35:15', 3, 'asdf')[0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 20ms (View: 6, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:35:15) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (2.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:35:15) [POST]
+  Parameters: {"comment"=>{"title"=>"asdf", "author_name"=>"dfsa", "article_id"=>"3", "content"=>"asdf"}, "authenticity_token"=>"HGNvL61dHan1Zozslrgsu9wpCUAnaTEiqtArBTjRw0c="}
+  [4;36;1mComment Create (0.4ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:35:15', 'asdf', 'dfsa', '2010-01-01 09:35:15', 3, 'asdf')[0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 19ms (View: 7, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:35:15) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:35:15) [POST]
+  Parameters: {"comment"=>{"title"=>"asdf", "author_name"=>"dfsa", "article_id"=>"3", "content"=>"asdf"}, "authenticity_token"=>"HGNvL61dHan1Zozslrgsu9wpCUAnaTEiqtArBTjRw0c="}
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:35:15', 'asdf', 'dfsa', '2010-01-01 09:35:15', 3, 'asdf')[0m
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:35:16) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+Completed in 17ms (View: 9, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:35:16) [POST]
+  Parameters: {"comment"=>{"title"=>"asdf", "author_name"=>"dfsa", "article_id"=>"3", "content"=>"asdf"}, "authenticity_token"=>"HGNvL61dHan1Zozslrgsu9wpCUAnaTEiqtArBTjRw0c="}
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:35:16', 'asdf', 'dfsa', '2010-01-01 09:35:16', 3, 'asdf')[0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.6ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+Completed in 21ms (View: 8, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:35:16) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.7ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 19ms (View: 10, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:35:23) [POST]
+  Parameters: {"id"=>"38"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 38) [0m
+  [4;36;1mComment Destroy (0.2ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 38[0m
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/comments/destroy/38]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:36:08) [GET]
+  Parameters: {"id"=>"undefined"}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=undefined):
+  app/controllers/comments_controller.rb:20:in `list'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:36:09) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.6ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Rendered articles/_article (15.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 31ms (View: 21, DB: 2) | 200 OK [http://localhost/users/home]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:36:09) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.6ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Rendered articles/_article (14.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 30ms (View: 20, DB: 2) | 200 OK [http://localhost/users/home]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:36:11) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.6ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (2.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Rendered articles/_article (18.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 96ms (View: 24, DB: 2) | 200 OK [http://localhost/users/home]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:36:13) [POST]
+  Parameters: {"id"=>"34"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 34) [0m
+  [4;35;1mComment Destroy (0.3ms)[0m   [0mDELETE FROM "comments" WHERE "id" = 34[0m
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/comments/destroy/34]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:36:13) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:36:14) [POST]
+  Parameters: {"id"=>"35"}
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 35) [0m
+  [4;36;1mComment Destroy (0.3ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 35[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://localhost/comments/destroy/35]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:36:14) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (2.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.0ms)
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:36:14) [POST]
+  Parameters: {"id"=>"36"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 36) [0m
+  [4;36;1mComment Destroy (0.3ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 36[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/comments/destroy/36]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:36:14) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:36:15) [POST]
+  Parameters: {"id"=>"37"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 37) [0m
+  [4;35;1mComment Destroy (0.3ms)[0m   [0mDELETE FROM "comments" WHERE "id" = 37[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/comments/destroy/37]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:36:15) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#destroy (for ::1 at 2010-01-01 17:36:15) [POST]
+  Parameters: {"id"=>"39"}
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 39) [0m
+  [4;35;1mComment Destroy (0.3ms)[0m   [0mDELETE FROM "comments" WHERE "id" = 39[0m
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://localhost/comments/destroy/39]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:36:15) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing CommentsController#create (for ::1 at 2010-01-01 17:36:21) [POST]
+  Parameters: {"comment"=>{"title"=>"asdfasdf", "author_name"=>"asdf", "article_id"=>"3", "content"=>""}, "authenticity_token"=>"HGNvL61dHan1Zozslrgsu9wpCUAnaTEiqtArBTjRw0c="}
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO "comments" ("created_at", "title", "author_name", "updated_at", "article_id", "content") VALUES('2010-01-01 09:36:21', 'asdfasdf', 'asdf', '2010-01-01 09:36:21', 3, '')[0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.9ms)
+Completed in 16ms (View: 4, DB: 1) | 200 OK [http://localhost/comments/create]
+
+
+Processing CommentsController#list (for ::1 at 2010-01-01 17:36:21) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.7ms)
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/comments/list/3]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:36:23) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.9ms)
+Rendered articles/_article (71.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 88ms (View: 77, DB: 2) | 200 OK [http://localhost/users/home]
+
+
+Processing UsersController#logout (for ::1 at 2010-01-01 17:36:25) [GET]
+Redirected to http://localhost:3000/articles
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/users/logout]
+
+
+Processing ArticlesController#index (for ::1 at 2010-01-01 17:36:25) [GET]
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" IS NULL) LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:36:26) [GET]
+Redirected to http://localhost:3000/users/register
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/users/home]
+
+
+Processing UsersController#register (for ::1 at 2010-01-01 17:36:26) [GET]
+Rendering template within layouts/application
+Rendering users/register
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/users/register]
+
+
+Processing UsersController#home (for ::1 at 2010-01-01 17:36:31) [GET]
+  Parameters: {"username"=>"tsdeng"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'tsdeng') LIMIT 1[0m
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (1.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendered comments/_comment (0.6ms)
+Rendered articles/_article (11.3ms)
+Completed in 25ms (View: 15, DB: 1) | 200 OK [http://localhost/]

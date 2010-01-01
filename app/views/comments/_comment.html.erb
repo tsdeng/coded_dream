@@ -4,4 +4,7 @@
   <div class="commentBody">
     <%=comment.content%>
   </div>
+  <%if session[:user_id]==comment.article.author_id%>
+  <%=link_to :delete!,{:controller=>"comments",:action=>"destroy",:id=>comment.id},{:class=>"ajaxDelete"}%>
+  <%end%>
 </div>
