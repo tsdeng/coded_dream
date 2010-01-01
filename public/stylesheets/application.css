@@ -128,6 +128,7 @@ div.comments_list{
     border: 1px white dashed;
     max-height: 20em;
     overflow: auto;
-    color:red;
+  
     /*background-color: #cccccc;*/
+    color: #ffcc00;
 }
