@@ -142,3 +142,27 @@ div.comments_list{
     height:300px;
     overflow: auto;
 }
+.rssEntryList{
+    background-color: white;
+    padding:5px;
+}
+.rssEntryList .title{
+    display:block;
+    width:20em;
+    margin:3px;
+    color:orange;
+    font-weight: bolder;
+    float:left;
+
+}
+.rssEntryList .entryRow{
+    border-bottom: 2px dashed gray;
+}
+.rssEntryList .address{
+    display:block;
+    width:20em;
+    margin:3px;
+    color:black;
+    float:left;
+
+}

@@ -1,22 +1,23 @@
 <h1>Listing rsses</h1>
-
-<table>
+<div class="rssEntryList">
+<table >
   <tr>
   <th style="width:100px;">Title</th>
     <th style="width:500px;">Address</th>
   </tr>
 
 <% @rsses.each do |rss| %>
-  <tr>
-    <td><%=h rss.title %></td>
-    <td><%=h rss.address %></td>
+  <div class="entryRow clearfix">
+    <span class="title"><%=h rss.title %></span>
+    <span class="address"><%=h rss.address %></span>
 
-    <td><%= link_to 'Show', rss %></td>
-    <td><%= link_to 'Edit', edit_rss_path(rss) %></td>
-    <td><%= link_to 'Destroy', rss, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+    <%= link_to 'Show', rss %>
+    <%= link_to 'Edit', edit_rss_path(rss) %>
+    <%= link_to 'Destroy', rss, :confirm => 'Are you sure?', :method => :delete %>
+  </div>
 <% end %>
 </table>
+</div>
 
 <br />
 
