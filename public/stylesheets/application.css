@@ -132,3 +132,9 @@ div.comments_list{
     /*background-color: #cccccc;*/
     color: #ffcc00;
 }
+
+/*style for rss*/
+.rssList{
+    border: 1px,black,solid;
+    background-color: #ffffcc;
+}

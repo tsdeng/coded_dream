@@ -4,39 +4,46 @@ items=@rss_content.items
 
 
 %>
-<p>
-  <b>Title:</b>
+<script type="text/javascript">
+  $(function() {
+    $(".rssList").accordion({autoHeight:false,header:'h3'});
+  });
+</script>
+<h3>
   <%=h channel.title %>
-</p>
-<p>
-  <b>Link:</b>
-  <%=h channel.link %>
-</p>
-<p>
-  <b>Description:</b>
-  <%=h channel.description %>
-</p>
+</h3>
+<div>
+  <p>
+    <b>Link:</b>
+    <%=h channel.link %>
+  </p>
+  <p>
+    <b>Description:</b>
+    <%=h channel.description %>
+  </p>
 
-<div style="border:1px black dotted;background-color: white">
-  <%for item in items%>
-    <p>
-      <b>Title:</b>
-      <%=h item.title %>
-    </p>
-    <p>
-      <b>Link:</b>
-      <%=h item.link %>
-    </p>
-    <p>
-      <b>Date:</b>
-      <%=h item.date %>
-    </p>
-    <p>
-      <b>Description</b>
-      <%= item.description %>
-    </p>
-
-  <%end%>
+  <div class="rssList">
+    <%for item in items%>
+      <h3>
+        <b>Title:</b>
+        <%=h item.title %>
+      </h3>
+    <div style="height:300px;">
+      <p>
+        <b>Link:</b>
+        <%=h item.link %>
+      </p>
+      <p>
+        <b>Date:</b>
+        <%=h item.date %>
+      </p>
+      <p>
+        <b>Description</b>
+        <%= item.description %>
+      </p>
+    </div>
+    <%end%>
+  </div>
 </div>
 
 
