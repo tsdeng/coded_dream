@@ -1,10 +1,6 @@
 <h1>Listing rsses</h1>
 <div class="rssEntryList">
-<table >
-  <tr>
-  <th style="width:100px;">Title</th>
-    <th style="width:500px;">Address</th>
-  </tr>
+
 
 <% @rsses.each do |rss| %>
   <div class="entryRow clearfix">
@@ -16,7 +12,7 @@
     <%= link_to 'Destroy', rss, :confirm => 'Are you sure?', :method => :delete %>
   </div>
 <% end %>
-</table>
+
 </div>
 
 <br />
