@@ -4,7 +4,7 @@
 
   <% @articles.each do |article| %>
     <li>
-      <h4>Title:<span class="title"><%= link_to article.title, edit_article_path(article) %></span></h4>
+      <h4>Title:<span class="title"><%= link_to article.title, edit_article_path(article) %></span><span class="state"><%=article.state%></span></h4>
       <div class="content">
         <%= h article.content %>
       </div>
@@ -12,6 +12,7 @@
       
       <%= link_to 'Edit', edit_article_path(article),:class=>"operation" %>
       <%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete,:class=>"operation" %>
+      <%= link_to 'Activate/Deactivate',:controller=>"articles",:action=>"toggle",:id=>article %>
     </li>
   <% end %>
   <%= link_to 'New article', new_article_path %>

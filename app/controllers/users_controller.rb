@@ -18,14 +18,14 @@ class UsersController < ApplicationController
     begin
       if params[:username]
         @author=User.find_by_username(params[:username])
-        @articles=Article.paginate_by_author_id @author.id,:page=>params[:page]||1,:per_page=>3,:order=>"created_at DESC"
-        return
+        
       elsif session[:user_id]
         @author=User.find(session[:user_id])
-        @articles=Article.paginate_by_author_id @author.id,:page=>params[:page]||1,:per_page=>3,:order=>"created_at DESC"
-        return
+      else
+        raise RuntimeError("can't find author")
       end
-      raise RuntimeError
+      @articles=Article.paginate_by_author_id_and_state @author.id,"active",:page=>params[:page]||1,:per_page=>3,:order=>"created_at DESC"
+    
     rescue
       redirect_to :controller=>:users,:action=>:register
     end

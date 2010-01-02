@@ -3,6 +3,8 @@ ActionController::Routing::Routes.draw do |map|
   map.connect "articles/console",:controller=>"articles",:action=>"console"
 
   map.resources :articles
+
+  map.connect "toggle/:id",:controller=>"articles",:action=>"toggle"
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

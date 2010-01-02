@@ -25014,3 +25014,532 @@ Processing CommentsController#list (for ::1 at 2010-01-01 17:44:47) [GET]
   [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
   [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
 Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/comments/list/3]
+  [4;36;1mSQL (16.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20091116134108)
+Migrating to CreateUsers (20091205041946)
+Migrating to AddPasswordToUsers (20091205043347)
+Migrating to AddAuthorIdToArticles (20091211130124)
+Migrating to CreateComments (20100101014825)
+Migrating to AddAuthorNameToUser (20100101015000)
+Migrating to RemoveAuthorNameFromUsers (20100101051857)
+Migrating to AddAuthorNameToComment (20100101052030)
+Migrating to AddStateToArticle (20100102020328)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "articles" ADD "state" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100102020328')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("comments")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing UsersController#home (for ::1 at 2010-01-02 10:25:38) [GET]
+  Parameters: {"username"=>"tsdeng"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'tsdeng') LIMIT 1[0m
+  [4;35;1mArticle Load (2.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 4) [0m
+Rendered articles/_article (132.1ms)
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+Rendered articles/_article (3.6ms)
+Completed in 322ms (View: 239, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing UsersController#login (for ::1 at 2010-01-02 10:25:42) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 29ms (View: 28, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for ::1 at 2010-01-02 10:25:49) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"iSo0dm+mRCFcQLSQI2BBMLZYK59mbAuSZiMEn+hl8S0=", "username"=>"tsdeng", "password"=>"tsdeng"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'tsdeng' AND "users"."password" = 'tsdeng') LIMIT 1[0m
+Redirected to http://localhost:3000/console
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/users/login]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:25:49) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 29ms (View: 24, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:26:04) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 29ms (View: 23, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:29:39) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 29ms (View: 23, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:29:39) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 27ms (View: 20, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:29:46) [GET]
+  Parameters: {"id"=>"3"}
+
+ActionController::UnknownAction (No action responded to toggle. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:34:01) [GET]
+  Parameters: {"id"=>"3"}
+
+ActiveRecord::RecordNotFound (Couldn't find Article without an ID):
+  app/controllers/articles_controller.rb:89:in `toggle'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.0ms)
+Rendered rescues/_request_and_response (16.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:34:22) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 02:34:22', "state" = 'active' WHERE "id" = 3[0m
+  [4;35;1mArticle Update (0.4ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2010-01-02 02:34:22', "state" = 'deactive' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/console
+Completed in 40ms (DB: 1) | 302 Found [http://localhost/toggle/3]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:34:22) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:34:24) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mArticle Update (0.3ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2010-01-02 02:34:24', "state" = 'active' WHERE "id" = 3[0m
+  [4;36;1mArticle Update (0.4ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 02:34:24', "state" = 'deactive' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/console
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/toggle/3]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:34:25) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 27ms (View: 21, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:34:26) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 02:34:26', "state" = 'active' WHERE "id" = 3[0m
+  [4;35;1mArticle Update (0.3ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2010-01-02 02:34:26', "state" = 'deactive' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/console
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/toggle/3]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:34:26) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 25ms (View: 19, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:34:27) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mArticle Update (0.3ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2010-01-02 02:34:27', "state" = 'active' WHERE "id" = 3[0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 02:34:27', "state" = 'deactive' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/console
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/toggle/3]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:34:27) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 25ms (View: 18, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:34:29) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;36;1mArticle Update (0.4ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 02:34:29', "state" = 'active' WHERE "id" = 4[0m
+  [4;35;1mArticle Update (0.3ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2010-01-02 02:34:29', "state" = 'deactive' WHERE "id" = 4[0m
+Redirected to http://localhost:3000/console
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/toggle/4]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:34:29) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:34:30) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;35;1mArticle Update (0.4ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2010-01-02 02:34:30', "state" = 'active' WHERE "id" = 4[0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 02:34:30', "state" = 'deactive' WHERE "id" = 4[0m
+Redirected to http://localhost:3000/console
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/toggle/4]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:34:30) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 27ms (View: 21, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:35:09) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.4ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 02:35:09', "state" = 'active' WHERE "id" = 3[0m
+  [4;35;1mArticle Update (0.3ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2010-01-02 02:35:09', "state" = 'deactive' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/console
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/toggle/3]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:35:09) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:37:43) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mArticle Update (0.6ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2010-01-02 02:37:43', "state" = 'active' WHERE "id" = 3[0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 02:37:43', "state" = 'deactive' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/console
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/toggle/3]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:37:43) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 26ms (View: 20, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:37:44) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:38:11) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 81ms (View: 75, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:38:15) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 02:38:15', "state" = 'deactive' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/console
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/toggle/3]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:38:15) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:38:17) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 02:38:17', "state" = 'active' WHERE "id" = 3[0m
+  [4;35;1mArticle Update (0.4ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2010-01-02 02:38:17', "state" = 'deactive' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/console
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/toggle/3]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:38:17) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 41ms (View: 35, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:40:02) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mArticle Update (0.3ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2010-01-02 02:40:02', "state" = 'active' WHERE "id" = 3[0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 02:40:02', "state" = 'deactive' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/console
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/toggle/3]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:40:02) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:40:49) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 02:40:49', "state" = 'active' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/console
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/toggle/3]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:40:49) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:40:51) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 02:40:51', "state" = 'deactive' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/console
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/toggle/3]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:40:51) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:40:52) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.4ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 02:40:52', "state" = 'active' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/console
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/toggle/3]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:40:52) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:40:52) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 02:40:52', "state" = 'deactive' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/console
+Completed in 8ms (DB: 1) | 302 Found [http://localhost/toggle/3]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:40:53) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 24ms (View: 19, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing UsersController#home (for ::1 at 2010-01-02 10:46:14) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 4) [0m
+Rendered articles/_article (8.8ms)
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+Rendered articles/_article (3.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 29ms (View: 19, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing UsersController#home (for ::1 at 2010-01-02 10:46:16) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 4) [0m
+Rendered articles/_article (8.7ms)
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+Rendered articles/_article (3.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 29ms (View: 18, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing UsersController#home (for ::1 at 2010-01-02 10:46:17) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 4) [0m
+Rendered articles/_article (8.5ms)
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+Rendered articles/_article (3.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 30ms (View: 18, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing UsersController#home (for ::1 at 2010-01-02 10:46:48) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."state" = 'active' AND "articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 18ms (View: 7, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing UsersController#home (for ::1 at 2010-01-02 10:46:50) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."state" = 'active' AND "articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:46:51) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 25ms (View: 19, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:46:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mArticle Update (0.3ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2010-01-02 02:46:54', "state" = 'active' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/console
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/toggle/3]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:46:54) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 25ms (View: 18, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing UsersController#home (for ::1 at 2010-01-02 10:46:55) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."state" = 'active' AND "articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+Rendered articles/_article (8.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 25ms (View: 15, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:46:57) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 24ms (View: 18, DB: 0) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 10:46:59) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;35;1mArticle Update (0.3ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2010-01-02 02:46:59', "state" = 'active' WHERE "id" = 4[0m
+Redirected to http://localhost:3000/console
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/toggle/4]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:46:59) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing UsersController#home (for ::1 at 2010-01-02 10:47:00) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."state" = 'active' AND "articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 4) [0m
+Rendered articles/_article (10.3ms)
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+Rendered articles/_article (3.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 94ms (View: 21, DB: 1) | 200 OK [http://localhost/users/home]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:47:10) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/console]

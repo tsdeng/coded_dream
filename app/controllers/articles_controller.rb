@@ -84,6 +84,22 @@ class ArticlesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+#---------------non-resource actions
+def toggle
+  article=Article.find(params[:id])
+  puts "-------------------toggleing"
+  p article.state
+  if article.state=="deactive" then
+    article.update_attribute("state", "active")
+    p "updated to active"
+ 
+  elsif article.state=="active" then
+    article.update_attribute("state", "deactive")
+    p "updated to deactive"
+  end
+  redirect_to :back
+end
+
 
   
 end
