@@ -25543,3 +25543,310 @@ Rendering template within layouts/application
 Rendering console/index
   [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
 Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing UsersController#home (for ::1 at 2010-01-02 10:56:53) [GET]
+  Parameters: {"username"=>"tsdeng"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'tsdeng') LIMIT 1[0m
+  [4;35;1mArticle Load (50.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."state" = 'active' AND "articles"."author_id" = 1) ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/home
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".article_id = 4) [0m
+Rendered articles/_article (87.9ms)
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".article_id = 3) [0m
+Rendered articles/_article (3.7ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 183ms (View: 113, DB: 51) | 200 OK [http://localhost/]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 10:56:56) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 30ms (View: 24, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 11:02:16) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 29ms (View: 24, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 11:02:20) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 25ms (View: 19, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle (for ::1 at 2010-01-02 11:02:22) [GET]
+  Parameters: {"class"=>"ajaxActiveOrDeactive", "id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:02:22', "state" = 'deactive' WHERE "id" = 3[0m
+
+NameError (uninitialized constant Mime::AJAX):
+  app/controllers/articles_controller.rb:102:in `toggle'
+  app/controllers/articles_controller.rb:100:in `toggle'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.4ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 11:03:28) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 85ms (View: 80, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle to ajax (for ::1 at 2010-01-02 11:03:31) [POST]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:03:31', "state" = 'active' WHERE "id" = 3[0m
+
+NameError (uninitialized constant Mime::AJAX):
+  app/controllers/articles_controller.rb:102:in `toggle'
+  app/controllers/articles_controller.rb:100:in `toggle'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#toggle to ajax (for ::1 at 2010-01-02 11:03:35) [POST]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:03:35', "state" = 'deactive' WHERE "id" = 3[0m
+
+NameError (uninitialized constant Mime::AJAX):
+  app/controllers/articles_controller.rb:102:in `toggle'
+  app/controllers/articles_controller.rb:100:in `toggle'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (89.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#toggle to ajax (for ::1 at 2010-01-02 11:03:35) [POST]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:03:35', "state" = 'active' WHERE "id" = 3[0m
+
+NameError (uninitialized constant Mime::AJAX):
+  app/controllers/articles_controller.rb:102:in `toggle'
+  app/controllers/articles_controller.rb:100:in `toggle'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#toggle to ajax (for ::1 at 2010-01-02 11:03:37) [POST]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;36;1mArticle Update (0.4ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:03:37', "state" = 'deactive' WHERE "id" = 4[0m
+
+NameError (uninitialized constant Mime::AJAX):
+  app/controllers/articles_controller.rb:102:in `toggle'
+  app/controllers/articles_controller.rb:100:in `toggle'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#toggle to ajax (for ::1 at 2010-01-02 11:03:38) [POST]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;36;1mArticle Update (0.4ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:03:38', "state" = 'active' WHERE "id" = 4[0m
+
+NameError (uninitialized constant Mime::AJAX):
+  app/controllers/articles_controller.rb:102:in `toggle'
+  app/controllers/articles_controller.rb:100:in `toggle'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#toggle to ajax (for ::1 at 2010-01-02 11:03:41) [POST]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.4ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:03:41', "state" = 'deactive' WHERE "id" = 3[0m
+
+NameError (uninitialized constant Mime::AJAX):
+  app/controllers/articles_controller.rb:102:in `toggle'
+  app/controllers/articles_controller.rb:100:in `toggle'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/twer/ruby187_home/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#toggle to ajax (for ::1 at 2010-01-02 11:05:16) [POST]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:05:16', "state" = 'active' WHERE "id" = 3[0m
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://localhost/toggle/3.ajax]
+
+
+Processing ArticlesController#toggle to ajax (for ::1 at 2010-01-02 11:05:19) [POST]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:05:19', "state" = 'deactive' WHERE "id" = 3[0m
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/toggle/3.ajax]
+
+
+Processing ArticlesController#toggle to ajax (for ::1 at 2010-01-02 11:05:31) [POST]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:05:31', "state" = 'active' WHERE "id" = 3[0m
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/toggle/3.ajax]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 11:09:00) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 87ms (View: 20, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ConsoleController#index (for ::1 at 2010-01-02 11:09:01) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."author_id" = 1) [0m
+Rendering template within layouts/application
+Rendering console/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 25ms (View: 20, DB: 1) | 200 OK [http://localhost/console]
+
+
+Processing ArticlesController#toggle to ajax (for ::1 at 2010-01-02 11:09:02) [POST]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:09:02', "state" = 'deactive' WHERE "id" = 3[0m
+Completed in 12ms (View: 1, DB: 1) | 200 OK [http://localhost/toggle/3.ajax]
+
+
+Processing ArticlesController#toggle to ajax (for ::1 at 2010-01-02 11:09:03) [POST]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.4ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:09:03', "state" = 'active' WHERE "id" = 3[0m
+Completed in 13ms (View: 2, DB: 1) | 200 OK [http://localhost/toggle/3.ajax]
+
+
+Processing ArticlesController#toggle to ajax (for ::1 at 2010-01-02 11:09:04) [POST]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:09:04', "state" = 'deactive' WHERE "id" = 3[0m
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://localhost/toggle/3.ajax]
+
+
+Processing ArticlesController#toggle to ajax (for ::1 at 2010-01-02 11:09:05) [POST]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:09:05', "state" = 'active' WHERE "id" = 3[0m
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://localhost/toggle/3.ajax]
+
+
+Processing ArticlesController#toggle to ajax (for ::1 at 2010-01-02 11:09:07) [POST]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:09:07', "state" = 'deactive' WHERE "id" = 4[0m
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://localhost/toggle/4.ajax]
+
+
+Processing ArticlesController#toggle to ajax (for ::1 at 2010-01-02 11:09:07) [POST]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:09:07', "state" = 'active' WHERE "id" = 4[0m
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://localhost/toggle/4.ajax]
+
+
+Processing ArticlesController#toggle to ajax (for ::1 at 2010-01-02 11:09:08) [POST]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:09:08', "state" = 'deactive' WHERE "id" = 4[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://localhost/toggle/4.ajax]
+
+
+Processing ArticlesController#toggle to ajax (for ::1 at 2010-01-02 11:09:09) [POST]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;36;1mArticle Update (0.4ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-01-02 03:09:09', "state" = 'active' WHERE "id" = 4[0m
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://localhost/toggle/4.ajax]

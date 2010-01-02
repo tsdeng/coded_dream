@@ -1,3 +1,7 @@
+<%content_for :head do%>
+    <%=javascript_include_tag "console/index" %>
+<%end%>
+
 <h2>console</h2>
 <div id="left_col" class="grid_8 alpha">
 <ul class="articles">
@@ -12,7 +16,7 @@
       
       <%= link_to 'Edit', edit_article_path(article),:class=>"operation" %>
       <%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete,:class=>"operation" %>
-      <%= link_to 'Activate/Deactivate',:controller=>"articles",:action=>"toggle",:id=>article %>
+      <%= link_to 'Activate/Deactivate',{:controller=>"articles",:action=>"toggle",:id=>article},:class=>"ajaxActiveOrDeactive" %>
     </li>
   <% end %>
   <%= link_to 'New article', new_article_path %>

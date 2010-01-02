@@ -96,8 +96,14 @@ def toggle
   elsif article.state=="active" then
     article.update_attribute("state", "deactive")
     p "updated to deactive"
-  end
-  redirect_to :back
+  end 
+  render :text=>article.state
+
+#  respond_to do |format|
+#    format.html { redirect_to :back}
+#    format.ajax  { render :text=>article.state }
+#  end
+  
 end
 
 
