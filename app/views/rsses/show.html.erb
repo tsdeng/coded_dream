@@ -28,10 +28,10 @@ items=@rss_content.items
         <b>Title:</b>
         <%=h item.title %>
       </h3>
-    <div class="body">
+    <div class="body" >
       <p>
         <b>Link:</b>
-        <%=h item.link %>
+        <%=link_to item.link,item.link %>
       </p>
       <p>
         <b>Date:</b>
