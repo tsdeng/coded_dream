@@ -4,7 +4,7 @@
 
 <% @rsses.each do |rss| %>
   <div class="entryRow clearfix">
-    <span class="title"><%=h rss.title %></span>
+    <a href="<%=rss_path(rss)%>" class="title"><%=h rss.title %></a>
     <span class="address"><%=h rss.address %></span>
 
     <%= link_to 'Show', rss %>

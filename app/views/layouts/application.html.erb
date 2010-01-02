@@ -43,7 +43,7 @@
             <li><%=link_to_when_login :Logout,"",:controller=>"users",:action=>"logout"%></li>
             <li><%=link_to_when_login :Console,"",:controller=>"console"%></li>
             <li><%=link_to_when_login "My Rss","",:controller=>"rsses"%></li>
-            <li><%=link_to_when_login "FeedBack","",:controller=>"feedbacks"%></li>
+            <li><%=link_to "FeedBack",:controller=>"feedbacks"%></li>
           </ul>
           <%if session[:user_id]%>
             <p id="status">Welcome <%=User.find(session[:user_id]).username%></p>
