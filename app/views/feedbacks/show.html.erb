@@ -1,0 +1,18 @@
+<p>
+  <b>Title:</b>
+  <%=h @feedback.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%=h @feedback.content %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%=h @feedback.priority %>
+</p>
+
+
+<%= link_to 'Edit', edit_feedback_path(@feedback) %> |
+<%= link_to 'Back', feedbacks_path %>
