@@ -138,6 +138,10 @@ div.comments_list{
     border: 1px,black,solid;
     background-color: #ffffcc;
 }
+.rssList h3{
+    padding:5px;
+    padding-left: 10em;
+}
 .rssList .body{
     height:300px;
     overflow: auto;
