@@ -37,11 +37,12 @@
             <q>2009/12/5 am 11:24</q>
           </div>
           <ul id="navigation" class="clearfix">
-            <li><%=link_to :home,:controller=>"users",:action=>"home"%></li>
-            <li><%=link_to :login,:controller=>"users",:action=>:login%></li>
-            <li><%=link_to :register,:controller=>"users",:action=>:register%></li>
-            <li><%=link_to_when_login :logout,"",:controller=>"users",:action=>"logout"%></li>
-            <li><%=link_to_when_login :console,"",:controller=>"console"%></li>
+            <li><%=link_to :Home,:controller=>"users",:action=>"home"%></li>
+            <li><%=link_to :Login,:controller=>"users",:action=>:login%></li>
+            <li><%=link_to :Register,:controller=>"users",:action=>:register%></li>
+            <li><%=link_to_when_login :Logout,"",:controller=>"users",:action=>"logout"%></li>
+            <li><%=link_to_when_login :Console,"",:controller=>"console"%></li>
+            <li><%=link_to_when_login "My Rss","",:controller=>"rsses"%></li>
           </ul>
           <%if session[:user_id]%>
             <p id="status">Welcome <%=User.find(session[:user_id]).username%></p>

@@ -1,10 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :rsses
+
 
   map.connect "articles/console",:controller=>"articles",:action=>"console"
 
   map.resources :articles
 
   map.connect "toggle/:id.:format",:controller=>"articles",:action=>"toggle"
+#  map.connect "feed/:id",:controller=>"articles",:action=>"feed",:format=>"xml"
+map.feed 'feed/:id',:controller=>"articles",:action=>"feed",:format=>"xml"
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

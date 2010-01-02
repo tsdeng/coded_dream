@@ -1,0 +1,44 @@
+<%
+channel=@rss_content.channel
+items=@rss_content.items
+
+
+%>
+<p>
+  <b>Title:</b>
+  <%=h channel.title %>
+</p>
+<p>
+  <b>Link:</b>
+  <%=h channel.link %>
+</p>
+<p>
+  <b>Description:</b>
+  <%=h channel.description %>
+</p>
+
+<div style="border:1px black dotted;background-color: white">
+  <%for item in items%>
+    <p>
+      <b>Title:</b>
+      <%=h item.title %>
+    </p>
+    <p>
+      <b>Link:</b>
+      <%=h item.link %>
+    </p>
+    <p>
+      <b>Date:</b>
+      <%=h item.date %>
+    </p>
+    <p>
+      <b>Description</b>
+      <%= item.description %>
+    </p>
+
+  <%end%>
+</div>
+
+
+<%= link_to 'Edit', edit_rss_path(@rss) %> |
+<%= link_to 'Back', rsses_path %>

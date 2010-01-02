@@ -1,5 +1,6 @@
 <%content_for :head do%>
    <%=javascript_include_tag "users/home" %>
+   <%= auto_discovery_link_tag :rss,feed_path(:id=>@author) %>
 <%end%>
 
 <script type="text/javascript">
@@ -11,6 +12,7 @@
 <div id="pager">
   <%=will_paginate @articles,:prev_label=>"previous page",:next_label=>"next page"%>
 </div>
+<%=link_to "RSS feed",feed_path(:id=>@author)%>
 
 <div id="article_list">
    <%=render :partial=>"/articles/article",:collection=>@articles%>

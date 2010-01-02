@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.xml
-  before_filter :check_login,:except=>[:index,:home_index]
+  before_filter :check_login,:except=>[:index,:home_index,:feed]
   
   def index
     @articles=Article.paginate_by_author_id session[:user_id],:page=>params[:page]||1,:per_page=>3
@@ -106,6 +106,12 @@ def toggle
   
 end
 
+def feed
+  author_id=params[:id];
+  @articles=Article.find_all_by_author_id(author_id,:order=>"created_at DESC",:limit=>10)
+  @author=User.find(author_id)
+#  render :text=>articles.length
+end
 
   
 end
