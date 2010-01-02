@@ -2,12 +2,15 @@
 
 <table>
   <tr>
-    <th>Address</th>
+  <th style="width:100px;">Title</th>
+    <th style="width:500px;">Address</th>
   </tr>
 
 <% @rsses.each do |rss| %>
   <tr>
+    <td><%=h rss.title %></td>
     <td><%=h rss.address %></td>
+
     <td><%= link_to 'Show', rss %></td>
     <td><%= link_to 'Edit', edit_rss_path(rss) %></td>
     <td><%= link_to 'Destroy', rss, :confirm => 'Are you sure?', :method => :delete %></td>

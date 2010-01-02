@@ -46,7 +46,7 @@ class RssesController < ApplicationController
     respond_to do |format|
       if @rss.save
         flash[:notice] = 'Rss was successfully created.'
-        format.html { redirect_to(@rss) }
+        format.html { redirect_to rsses_path }
         format.xml  { render :xml => @rss, :status => :created, :location => @rss }
       else
         format.html { render :action => "new" }
@@ -63,7 +63,7 @@ class RssesController < ApplicationController
     respond_to do |format|
       if @rss.update_attributes(params[:rss])
         flash[:notice] = 'Rss was successfully updated.'
-        format.html { redirect_to(@rss) }
+        format.html { redirect_to rsses_path }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
