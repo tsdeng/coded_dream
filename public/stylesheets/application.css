@@ -158,8 +158,7 @@ div.comments_list{
 
 }
 .entryRow:hover{
-   background-color: orange;
-
+   background-color: #ffff99;
 }
 .rssEntryList .entryRow{
     border-bottom: 2px solid gray;
