@@ -2,8 +2,9 @@
 *{
 	margin:0;
 	padding:0;
-	/*color:#333333;*/
+	color:#333333;
 	word-wrap:break-word;
+    font-family: Arial,Helvetica,sans-serif;
 }
 
 ul#navigation{
@@ -12,16 +13,25 @@ ul#navigation{
 	width:auto;
 	float:left;
 
+    font-family: 'Courier New',Courier,monospace;
 }
 
 ul#navigation li{
+        margin:0px;
 	display:block;
 	float:left;
-	width:100px;
+	width:80px;
+        padding-left: 20px;
+       
+}
+ul#navigation li:hover{
+    background-image: url(../../images/arrow.png);
+    background-repeat: no-repeat
 }
 
+
 #heading{
-	height:138px;
+	height:114px;
 
 }
 body,html{
@@ -67,24 +77,24 @@ div.article a{
 }
 
 body{
-    background-color: #d7d7d7;
-	background:  url(/images/bg_shadow.png) repeat-y center
+ 
+	background:  url(/images/960_shadow.png) repeat-y center #f0f0f0
+
 }
 #container{
 	min-height:100%;
 	
-	background-color:#bababa;
 }
 
 #main_column{
 	
 }
+
 #heading{
-	padding:10px;
-}
-#heading{
-    background: black url('/images/heading_light.png') repeat-y center;
-    border:1px dotted white;
+
+    padding-left: 135px;
+    background: url('/images/CinemaDisplay.png') no-repeat left;
+    border-bottom: 5px solid #989898;
 }
 #heading h1{
     
@@ -94,7 +104,14 @@ body{
 #heading a{
 	font-weight: bold;
 	text-decoration: none;
-	color:white;
+	color:black;
+        
+}
+#heading li{
+    border-right: 1px #989898 solid
+}
+#heading a:hover{
+    color: #a0aa65
 }
 
 
@@ -107,16 +124,20 @@ form.comment_form p{
     margin:0;
     margin-top: 2px;
 }
+
+form.comment_form p{
+    clear: both
+}
 form.comment_form label{
     padding-right: 5px;
     float:left;
     width: 8em;
-    color: #cccccc;
+    /*color: #cccccc;*/
     text-align: right;
 }
 form.comment_form input[type="text"],form.comment_form textarea{
      width: 20em;
-    background-color: #666666;
+    /*background-color: #666666;*/
     border:0;
     color:white;
 }
@@ -130,7 +151,7 @@ div.comments_list{
     overflow: auto;
   
     /*background-color: #cccccc;*/
-    color: #ffcc00;
+    /*color: #ffcc00;*/
 }
 
 /*style for rss*/

@@ -1,15 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
-    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
-        <file>file:/Users/twer/Develop/coded_dream/app/controllers/rsses_controller.rb</file>
-        <file>file:/Users/twer/Develop/coded_dream/app/models/feedback.rb</file>
-        <file>file:/Users/twer/Develop/coded_dream/app/models/comment.rb</file>
-        <file>file:/Users/twer/Develop/coded_dream/app/models/article.rb</file>
-        <file>file:/Users/twer/Develop/coded_dream/app/views/articles/feed.xml.builder</file>
-        <file>file:/Users/twer/Develop/coded_dream/config/routes.rb</file>
-        <file>file:/Users/twer/Develop/coded_dream/app/views/articles/index.html.erb</file>
-        <file>file:/Users/twer/Develop/coded_dream/app/views/users/home.html.erb</file>
-        <file>file:/Users/twer/Develop/coded_dream/app/views/articles/_article.html.erb</file>
-    </open-files>
 </project-private>
