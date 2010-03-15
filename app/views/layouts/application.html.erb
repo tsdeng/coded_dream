@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
-    <title>Coded Dream 0.1</title>
+    <title>Coded Dream 0.2</title>
     <%= stylesheet_link_tag 'scaffold' %>
     <%= stylesheet_link_tag '960/960','960/reset','960/text'%>
     <%= stylesheet_link_tag 'jquery-ui/css/ui-darkness/jquery-ui-1.7.2.custom'%>
@@ -39,7 +39,7 @@
           <ul id="navigation" class="clearfix">
             <li><%=link_to :Home,:controller=>"users",:action=>"home"%></li>
             <li><%=link_to :Login,:controller=>"users",:action=>:login%></li>
-            <li><%=link_to :Register,:controller=>"users",:action=>:register%></li>
+            <!--<li><%=link_to :Register,:controller=>"users",:action=>:register%></li>-->
             <li><%=link_to_when_login :Logout,"",:controller=>"users",:action=>"logout"%></li>
             <li><%=link_to_when_login :Console,"",:controller=>"console"%></li>
             <li><%=link_to_when_login "My Rss","",:controller=>"rsses"%></li>

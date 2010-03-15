@@ -1,3 +1,5 @@
+/*util class*/
+
 /*define layout*/
 *{
 	margin:0;
@@ -137,9 +139,9 @@ form.comment_form label{
 }
 form.comment_form input[type="text"],form.comment_form textarea{
      width: 20em;
-    /*background-color: #666666;*/
+    background-color: white;
     border:0;
-    color:white;
+    color:black;
 }
 
 form.comment_form textarea{
