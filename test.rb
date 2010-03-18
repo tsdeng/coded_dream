@@ -1,2 +1,3 @@
-message=gets().chmod
-puts "you said:#{message}"
+message=gets().chomp
+puts "you said:#{message}
+
