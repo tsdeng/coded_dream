@@ -1,74 +1,62 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
-    <title>Coded Dream 0.2</title>
-    <%= stylesheet_link_tag 'scaffold' %>
-    <%= stylesheet_link_tag '960/960','960/reset','960/text'%>
-    <%= stylesheet_link_tag 'jquery-ui/css/ui-darkness/jquery-ui-1.7.2.custom'%>
-    <%= javascript_include_tag 'jquery'%>
-    <%= javascript_include_tag 'application'%>
-    <%= javascript_include_tag 'jquery-ui/js/jquery-ui-1.7.2.custom.min.js'%>
-    <%=yield :head%>
-    <!--for mark it up texteditor-->
-    <!-- markItUp! -->
-    <%= javascript_include_tag '/markitup/jquery.markitup.pack.js'%>
-    <!-- markItUp! toolbar settings -->
-    <%= javascript_include_tag "/markitup/sets/html/set.js"%>
-    <!-- markItUp! skin -->
-    <%= stylesheet_link_tag "/markitup/skins/markitup/style.css" %>
-    <!--  markItUp! toolbar skin -->
-    <%= stylesheet_link_tag "/markitup/sets/html/style.css" %>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+	<title>Coded Dream 0.2</title>
+	<%= stylesheet_link_tag 'scaffold' %>
+	<%= stylesheet_link_tag '960/960','960/reset','960/text'%>
+	<%= stylesheet_link_tag 'jquery-ui/css/ui-darkness/jquery-ui-1.7.2.custom'%>
+	<%= javascript_include_tag 'jquery'%>
+	<%= javascript_include_tag 'application'%>
+	<%= javascript_include_tag 'jquery-ui/js/jquery-ui-1.7.2.custom.min.js'%>
+	<%=yield :head%>
+	<%=render :partial=>"partials/js_plugins"%>
+	<%= stylesheet_link_tag 'application' %>
 
-    <!--END for mark it up texteditor-->
+</head>
+<body>
+	<div id="container" class="container_12 clearfix">
+		<div id="top_area" class="grid_12 clearfix">
+			<div id="heading" class="clearfix" >
+				<h1>Coded Dream</h1>
+				<div id="intro">
+					<span>the blog of a ruby fan &nbsp</span>
+					<q>2009/12/5 am 11:24</q>
+				</div>
+				<ul id="navigation" class="clearfix">
+					<li><%=link_to :Home,:controller=>"users",:action=>"home"%></li>
+					<li><%=link_to :Login,:controller=>"users",:action=>:login%></li>
+					<!--<li><%=link_to :Register,:controller=>"users",:action=>:register%></li>-->
+					<li><%=link_to_when_login :Logout,"",:controller=>"users",:action=>"logout"%></li>
+					<li><%=link_to_when_login :Console,"",:controller=>"console"%></li>
+					<li><%=link_to_when_login "My Rss","",:controller=>"rsses"%></li>
+					<!-- <li><%=link_to "FeedBack",:controller=>"feedbacks"%></li> -->
+				</ul>
+				<%display_when_login do%>
+				<p id="status">Welcome <%=User.find(session[:user_id]).username%></p>
+				<%end%>
+			</div>
+		</div>
 
-    <%= stylesheet_link_tag 'application' %>
+		<div id="main_column" class="grid_12">
+			<div class="notice"><%= flash[:notice] %></div>
+			<%= yield %>
+		</div>
+		<div id="footer"class="grid_12">
 
-  </head>
-  <body>
-    <div id="container" class="container_12 clearfix">
-      <div id="top_area" class="grid_12 clearfix">
-        <div id="heading" class="clearfix" >
-          <h1>Coded Dream</h1>
-          <div id="intro">
-            <span>the blog of a ruby fan &nbsp</span>
-            <q>2009/12/5 am 11:24</q>
-          </div>
-          <ul id="navigation" class="clearfix">
-            <li><%=link_to :Home,:controller=>"users",:action=>"home"%></li>
-            <li><%=link_to :Login,:controller=>"users",:action=>:login%></li>
-            <!--<li><%=link_to :Register,:controller=>"users",:action=>:register%></li>-->
-            <li><%=link_to_when_login :Logout,"",:controller=>"users",:action=>"logout"%></li>
-            <li><%=link_to_when_login :Console,"",:controller=>"console"%></li>
-            <li><%=link_to_when_login "My Rss","",:controller=>"rsses"%></li>
-            <li><%=link_to "FeedBack",:controller=>"feedbacks"%></li>
-          </ul>
-          <%if session[:user_id]%>
-            <p id="status">Welcome <%=User.find(session[:user_id]).username%></p>
-          <%end%>
+			<p>dengtianshuo@gmail.com</p>
+			<p></p>
+		</div>
+		<%if ENV["RAILS_ENV"]=="development"%>
+		<div id="debug" class="grid_12 clearfix" style="border:1px solid black">
+			<div><%=debug(session)%></div>
+			<div><%=request.url%></div>
+			<div><%=session[:url]%> </div>
 
-        </div>
-      </div>
-
-      <div id="main_column" class="grid_12">
-        <div class="notice"><%= flash[:notice] %></div>
-        <%= yield %>
-      </div>
-      <div id="footer"class="grid_12">
-
-        <p>dengtianshuo@gmail.com</p>
-        <p></p>
-      </div>
-      <%if ENV["RAILS_ENV"]=="development"%>
-        <div id="debug" class="grid_12 clearfix" style="border:1px solid black">
-          <div><%=debug(session)%></div>
-          <div><%=request.url%></div>
-          <div><%=session[:url]%> </div>
-
-        </div>
-      <%end%>
-    </div>
-  </body>
+		</div>
+		<%end%>
+	</div>
+</body>
 </html>
