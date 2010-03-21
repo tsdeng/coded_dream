@@ -4,12 +4,11 @@ class UsersController < ApplicationController
   def login
     if request.post?
       username,password=params[:username],params[:password];
-      current_user=User.login(username,password)
+      current_user=User.login(username,password,session)
       if !current_user
         flash[:notice]="unmatched username and password"
         return
       end
-      session[:user_id]=current_user.id
       redirect_to :controller=>"console"
     end
   end
