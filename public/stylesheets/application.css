@@ -6,7 +6,7 @@
 	padding:0;
 	color:#333333;
 	word-wrap:break-word;
-    font-family: Arial,Helvetica,sans-serif;
+	font-family: Arial,Helvetica,sans-serif;
 }
 
 ul#navigation{
@@ -15,20 +15,20 @@ ul#navigation{
 	width:auto;
 	float:left;
 
-    font-family: 'Courier New',Courier,monospace;
+	font-family: 'Courier New',Courier,monospace;
 }
 
 ul#navigation li{
-        margin:0px;
+	margin:0px;
 	display:block;
 	float:left;
 	width:80px;
-        padding-left: 20px;
-       
+	padding-left: 20px;
+
 }
 ul#navigation li:hover{
-    background-image: url(../../images/arrow.png);
-    background-repeat: no-repeat
+	background-image: url(../../images/arrow.png);
+	background-repeat: no-repeat
 }
 
 
@@ -46,25 +46,27 @@ body,html{
 }
 
 span.created_at{
-    diaplay:block;
-    float:right;
+	diaplay:block;
+	float:right;
 }
 
 /*define color and font*/
 p.articleContent{
-    color: #ff9900;
+	color: #ff9900;
 }
-div.notice *{
-    color: #ffff33;
-    margin:0px;
+div.notice{
+	background-color:#EDEDED;
+	color: #ffff33;
+	border:1px dotted red;
+	margin:0px;
 }
 ul.articles li{
-    list-style:none;
-    border-bottom: 5px solid #999;
-    clear:both;
-    padding:10px;
-    margin:0;
-    margin-bottom:10px;
+	list-style:none;
+	border-bottom: 5px solid #999;
+	clear:both;
+	padding:10px;
+	margin:0;
+	margin-bottom:10px;
 
 }
 
@@ -75,31 +77,31 @@ div.article .field{
 }
 div.article a{
 	font-weight: bolder;
-    color:green;	
+	color:green;	
 }
 
 body{
- 
+
 	background:  url(/images/960_shadow.png) repeat-y center #f0f0f0
 
 }
 #container{
 	min-height:100%;
-	
+
 }
 
 #main_column{
-	
+
 }
 
 #heading{
 
-    padding-left: 135px;
-    background: url('/images/CinemaDisplay.png') no-repeat left;
-    border-bottom: 5px solid #989898;
+	padding-left: 135px;
+	background: url('/images/CinemaDisplay.png') no-repeat left;
+	border-bottom: 5px solid #989898;
 }
 #heading h1{
-    
+
 
 	color: #333333;
 }
@@ -107,97 +109,97 @@ body{
 	font-weight: bold;
 	text-decoration: none;
 	color:black;
-        
+
 }
 #heading li{
-    border-right: 1px #989898 solid
+	border-right: 1px #989898 solid
 }
 #heading a:hover{
-    color: #a0aa65
+	color: #a0aa65
 }
 
 
 /*define style for home page elements*/
 form.comment_form{
-    border: 1px dotted orange;
-    max-height: 15em;
+	border: 1px dotted orange;
+	max-height: 15em;
 }
 form.comment_form p{
-    margin:0;
-    margin-top: 2px;
+	margin:0;
+	margin-top: 2px;
 }
 
 form.comment_form p{
-    clear: both
+	clear: both
 }
 form.comment_form label{
-    padding-right: 5px;
-    float:left;
-    width: 8em;
-    /*color: #cccccc;*/
-    text-align: right;
+	padding-right: 5px;
+	float:left;
+	width: 8em;
+	/*color: #cccccc;*/
+	text-align: right;
 }
 form.comment_form input[type="text"],form.comment_form textarea{
-     width: 20em;
-    background-color: white;
-    border:0;
-    color:black;
+	width: 20em;
+	background-color: white;
+	border:0;
+	color:black;
 }
 
 form.comment_form textarea{
-    height:3em;
+	height:3em;
 }
 div.comments_list{
-    border: 1px white dashed;
-    max-height: 20em;
-    overflow: auto;
-  
-    /*background-color: #cccccc;*/
-    /*color: #ffcc00;*/
+	border: 1px white dashed;
+	max-height: 20em;
+	overflow: auto;
+
+	/*background-color: #cccccc;*/
+	/*color: #ffcc00;*/
 }
 
 /*style for rss*/
 .rssList{
-    border: 1px,black,solid;
-    background-color: #ffffcc;
+	border: 1px,black,solid;
+	background-color: #ffffcc;
 }
 .rssList h3{
-    padding:5px;
-    padding-left: 10em;
+	padding:5px;
+	padding-left: 10em;
 }
 .rssList .body{
-    height:300px;
-    overflow: auto;
+	height:300px;
+	overflow: auto;
 }
 .rssEntryList{
-    background-color: white;
-    padding:5px;
+	background-color: white;
+	padding:5px;
 }
 .entryRow .title{
-    display:block;
-    width:20em;
-    margin:10px;
-    color:black;
-    font-size: 1.3em;
-    font-weight: bolder;
-    float:left;
-    text-decoration: none;
+	display:block;
+	width:20em;
+	margin:10px;
+	color:black;
+	font-size: 1.3em;
+	font-weight: bolder;
+	float:left;
+	text-decoration: none;
 
 }
 .entryRow:hover{
-   background-color: #ffff99;
+	background-color: #ffff99;
 }
 .rssEntryList .entryRow{
-    border-bottom: 2px solid gray;
+	border-bottom: 2px solid gray;
 }
 .rssEntryList .address{
-    display:block;
-    width:30em;
-    margin:3px;
-    color:black;
-    float:left;
+	display:block;
+	width:30em;
+	margin:3px;
+	color:black;
+	float:left;
 
 }
 .entryRow a{
-    float: right;
+	float: right;
 }

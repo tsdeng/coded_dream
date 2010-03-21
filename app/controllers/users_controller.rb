@@ -22,12 +22,13 @@ class UsersController < ApplicationController
       elsif session[:user_id]
         @author=User.find(session[:user_id])
       else
-        raise RuntimeError("can't find author")
+        raise RuntimeError.new("can't find author")
       end
       @articles=Article.paginate_by_author_id_and_state @author.id,"active",:page=>params[:page]||1,:per_page=>3,:order=>"created_at DESC"
     
-    rescue
-      redirect_to :controller=>:users,:action=>:register
+    rescue =>msg
+      flash[:notice]=msg.message.to_s
+      redirect_to root_path
     end
   end
 
