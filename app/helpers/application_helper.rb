@@ -7,4 +7,11 @@ module ApplicationHelper
     return alternative
     #return ""
   end
+  
+  def display_when_login 
+     if session[:user_id]
+       return yield
+     end
+  end
+  
 end
