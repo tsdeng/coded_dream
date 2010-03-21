@@ -1,4 +1,6 @@
+
 class UsersController < ApplicationController
+
   def login
     if request.post?
       username,password=params[:username],params[:password];
@@ -9,27 +11,21 @@ class UsersController < ApplicationController
       end
       session[:user_id]=current_user.id
       redirect_to :controller=>"console"
-        
-    
     end
   end
 
   def home
-    begin
+  
       if params[:username]
         @author=User.find_by_username(params[:username])
-        
+
       elsif session[:user_id]
         @author=User.find(session[:user_id])
       else
-        raise RuntimeError.new("can't find author")
+        raise AuthorizationError.new("can't find author")
       end
       @articles=Article.paginate_by_author_id_and_state @author.id,"active",:page=>params[:page]||1,:per_page=>3,:order=>"created_at DESC"
     
-    rescue =>msg
-      flash[:notice]=msg.message.to_s
-      redirect_to root_path
-    end
   end
 
   def register
@@ -58,6 +54,6 @@ class UsersController < ApplicationController
 
   private
 
+ 
 
 end
-
