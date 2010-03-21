@@ -14,17 +14,15 @@ class UsersController < ApplicationController
   end
 
   def home
-  
       if params[:username]
         @author=User.find_by_username(params[:username])
-
       elsif session[:user_id]
         @author=User.find(session[:user_id])
       else
         raise AuthorizationError.new("can't find author")
       end
+      
       @articles=Article.paginate_by_author_id_and_state @author.id,"active",:page=>params[:page]||1,:per_page=>3,:order=>"created_at DESC"
-    
   end
 
   def register
