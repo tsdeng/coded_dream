@@ -11,3 +11,10 @@ two:
   age: 1
   gender: MyString
   email: MyString
+
+three:
+  username: tsdeng
+  age: 1
+  gender: male
+  email: dd
+  password: tsdeng

@@ -3,11 +3,6 @@
    <%= auto_discovery_link_tag :rss,feed_path(:id=>@author) %>
 <%end%>
 
-<script type="text/javascript">
-  <%#*$(function() {%>
-    <%#*$("#article_list").accordion({autoHeight:false});%>
-  <%#*});%>
-</script>
 
 <div id="pager">
   <%=will_paginate @articles,:prev_label=>"previous page",:next_label=>"next page"%>
