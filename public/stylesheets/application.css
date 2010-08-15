@@ -51,14 +51,11 @@ span.created_at{
 }
 
 /*define color and font*/
-p.articleContent{
-	color: #ff9900;
+div.articleContent *{
+	color:black;
 }
 div.notice{
-	background-color:#EDEDED;
-	color: #ffff33;
-	border:1px dotted red;
-	margin:0px;
+
 }
 ul.articles li{
 	list-style:none;
@@ -82,7 +79,7 @@ div.article a{
 
 body{
 
-	background:  url(/images/960_shadow.png) repeat-y center #f0f0f0
+	background:  url(/images/960_shadow.png) repeat-y center #F5EDE3
 
 }
 #container{

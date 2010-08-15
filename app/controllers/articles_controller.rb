@@ -22,6 +22,7 @@ class ArticlesController < ApplicationController
       format.xml  { render :xml => @article }
     end
   end
+  
 
   # GET /articles/new
   # GET /articles/new.xml
