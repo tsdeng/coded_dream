@@ -35,7 +35,7 @@
 					<!-- <li><%=link_to "FeedBack",:controller=>"feedbacks"%></li> -->
 				</ul>
 				<%display_when_login do%>
-				<p id="status">Welcome <%=User.find(session[:user_id]).username%></p>
+				<p id="status">Welcome <%=User.find(session[:user_id]).username rescue "cant find it" end%></p>
 				<%end%>
 			</div>
 		</div>
