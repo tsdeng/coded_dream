@@ -1,0 +1,1 @@
+rsync -aP ./ dengtian@dengtianshuo.com:/home2/dengtian/rails/coded_dream

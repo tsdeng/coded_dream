@@ -1,3 +1,5 @@
+#edited by ipad
+
 class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.xml
