@@ -29,6 +29,7 @@ class ApplicationController < ActionController::Base
       redirect_to :back
     end
   end
+  
   def handle_runtime_error(ex)
     flash[:notice]=ex.message.to_s
     redirect_to root_path

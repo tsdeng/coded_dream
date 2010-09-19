@@ -1,0 +1,48 @@
+<%content_for :head do%>
+    <%=javascript_include_tag "console/index" %>
+<%end%>
+
+<h2>CONSOLE</h2>
+<div id="left_col" class="grid_8 alpha">
+	<div>
+		<%= link_to 'New article', new_article_path %>
+	</div>
+<ul class="articles">
+
+  <% @articles.each do |article| %>
+    <li>
+      <div class="article_head">
+		<h4 class="title"><%= link_to article.title, edit_article_path(article) %></h4>
+		<span class="state"><%=article.state%></span>
+		&ndash;
+		<%= link_to 'Edit', edit_article_path(article),:class=>"operation" %>
+		&ndash;
+	    <%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete,:class=>"operation" %>
+	&ndash;
+	    <%= link_to 'Activate/Deactivate',{:controller=>"articles",:action=>"toggle",:id=>article},:class=>"ajaxActiveOrDeactive" %>
+	  </div>
+      <div class="content">
+        <%= h article.content %>
+      </div>
+      
+      
+      
+    </li>
+  <% end %>
+  
+</ul>
+</div>
+<div id="right_col" class="grid_4 omega">
+  <div id="catgory">
+    <h3>Select a category</h3>
+    <ul>
+      <li>tech</li>
+      <li>life</li>
+      <li>music</li>
+
+    </ul>
+
+  </div>
+
+</div>
+

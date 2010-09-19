@@ -1,6 +1,7 @@
-#edited by ipad
 
-class ArticlesController < ApplicationController
+class ArticlesController< ApplicationController
+
+
   # GET /articles
   # GET /articles.xml
   before_filter :check_login,:except=>[:index,:home_index,:feed]
@@ -45,14 +46,13 @@ class ArticlesController < ApplicationController
   # POST /articles.xml
   def create
     author=User.find(session[:user_id])
-#    @article = Article.new(params[:article])
-   @article=author.articles.build(params[:article])
+    @article=author.articles.build(params[:article])
     respond_to do |format|
       if @article.save
         flash[:notice] = 'Article was successfully created.'
         format.html { 
           redirect_to_remembered_url
-          }
+         }
         format.xml  { render :xml => @article, :status => :created, :location => @article }
       else
         format.html { render :action => "new" }
@@ -88,6 +88,8 @@ class ArticlesController < ApplicationController
     end
   end
 #---------------non-resource actions
+
+# toggle article's state between activate and deactivate
 def toggle
   article=Article.find(params[:id])
   puts "-------------------toggleing"
@@ -101,11 +103,6 @@ def toggle
     p "updated to deactive"
   end 
   render :text=>article.state
-
-#  respond_to do |format|
-#    format.html { redirect_to :back}
-#    format.ajax  { render :text=>article.state }
-#  end
   
 end
 
@@ -113,7 +110,6 @@ def feed
   author_id=params[:id];
   @articles=Article.find_all_by_author_id(author_id,:order=>"created_at DESC",:limit=>10)
   @author=User.find(author_id)
-#  render :text=>articles.length
 end
 
   

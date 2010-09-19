@@ -1,0 +1,4 @@
+stamp=`date +%Y%m%d%l%M%S`
+wdir="/Users/twer/Develop/Projects/coded_dream"
+server="dengtian@dengtianshuo.com:/home2/dengtian/rails"
+nohup rsync -aP $wdir $server|tee $wdir/logs/rsync.$stamp.log

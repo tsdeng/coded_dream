@@ -1,3 +1,3 @@
 message=gets().chomp
-puts "you said:#{message}
+puts "you said:#{message}"
 
